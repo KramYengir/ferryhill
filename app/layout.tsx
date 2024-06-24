@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Merriweather } from "next/font/google";
 import "./globals.css";
+import Nav from "@/components/Nav";
 
 const inter = Inter({ subsets: ["latin"] });
 // const merriweather = Merriweather({
@@ -21,7 +22,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${inter.className} bg-fh-blue-950`}>
+        <Nav />
+        {children}
+      </body>
     </html>
   );
 }
