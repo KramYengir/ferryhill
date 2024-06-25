@@ -19,7 +19,7 @@ const config = {
     },
     extend: {
       backgroundImage: {
-        hero: "url('../public/fish-in-oil.png')",
+        hero: "url('../assets/images/fish-in-oil.png')",
         heroB:
           "bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% ",
       },
