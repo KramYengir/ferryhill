@@ -4,7 +4,14 @@ import { useState } from "react";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 import logo from "../public/logo.png";
-import { Crosshair, CrossIcon, Menu, SidebarClose, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
+
+const navLinks = [
+  { name: "Home", path: "/" },
+  { name: "Menu", path: "/menu" },
+  { name: "About", path: "/about" },
+  { name: "Contact", path: "/contact" },
+];
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,104 +23,55 @@ const Navbar = () => {
   };
 
   return (
-    <header>
-      <nav className="flex justify-between items-center mx-auto max-w-screen-xl px-6 py-2 text-white ">
-        <Link href={"/"} className="flex items-center tracking-wider">
-          <div className=" max-w-24 mr-1">
-            <Image
-              src={logo}
-              alt="logo in the shape of a film reel with the letters r r"
-            />
-          </div>
+    <header className=" bg-fh-blue-950 backdrop-blur-lg">
+      <nav className="relative flex justify-between items-center py-2 px-4 max-w-screen-xl mx-auto">
+        <Link href={"/"}>
+          <Image src={logo} width={124} alt="logo of restaurant" />
         </Link>
+
         {/* Mobile Nav */}
-        <button
-          className="absolute top-10 right-6 md:hidden z-50 text-xl"
-          onClick={toggleMenu}
-        >
-          {isOpen ? <X className=" text-fh-gold-200" /> : <Menu />}
-        </button>
+        <div className="block sm:hidden text-white" onClick={toggleMenu}>
+          {isOpen ? <X size={48} /> : <Menu size={48} />}
+        </div>
         {isOpen && (
-          <ul className="fixed inset-0 z-40 py-24 flex flex-col gap-12 text-2xl items-center bg-fh-blue-800 text-fh-gold-200">
-            <li
-              className={`hover:text-scooter-500 ${
-                pathName === "/"
-                  ? "text-scooter-500 dark:text-scooter-300 font-medium"
-                  : ""
-              } `}
-            >
-              <Link href={"//"} onClick={toggleMenu}>
-                Home
-              </Link>
-            </li>
-            <li
-              className={`hover:text-scooter-500 ${
-                pathName === "/menu"
-                  ? "text-scooter-500 dark:text-scooter-300 font-medium"
-                  : ""
-              } `}
-            >
-              <Link href={"/hidden-gems"} onClick={toggleMenu}>
-                Menu
-              </Link>
-            </li>
-            <li
-              className={`hover:text-scooter-500 ${
-                pathName === "/about"
-                  ? "text-scooter-500 dark:text-scooter-300 font-medium"
-                  : ""
-              } `}
-            >
-              <Link href={"/about"} onClick={toggleMenu}>
-                About
-              </Link>
-            </li>
+          <ul className="sm:hidden absolute z-10 top-[100%] right-0 left-0 bg-fh-blue-950 text-fh-blue-200">
+            {navLinks.map((link) => {
+              const isActive = pathName === link.path;
+              return (
+                <li
+                  key={link.name}
+                  className={`${
+                    isActive ? "font-bold text-fh-blue-50" : "font-normal"
+                  } my-8 text-center tracking-wide`}
+                >
+                  <Link
+                    href={link.path}
+                    onClick={() => setIsOpen(false)}
+                    className="uppercase"
+                  >
+                    {link.name}
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
         )}
+
         {/* Desktop Nav */}
-        <ul className="hidden md:flex items-center gap-6 ">
-          <li
-            className={`hover:text-scooter-500 ${
-              pathName === "/"
-                ? "text-scooter-500 dark:text-scooter-300 font-medium"
-                : ""
-            } `}
-          >
-            <Link
-              href={"/"}
-              aria-current={pathName === "/" ? "page" : undefined}
-            >
-              Home
-            </Link>
-          </li>
-          <li
-            className={`hover:text-scooter-500 dark:hover:text-scooter-400 ${
-              pathName === "/menu"
-                ? "text-scooter-500 dark:text-scooter-300 font-medium"
-                : ""
-            } `}
-          >
-            <Link
-              href={"/menu"}
-              aria-current={pathName === "/menu" ? "page" : undefined}
-            >
-              Menu
-            </Link>
-          </li>
-          <li
-            className={`hover:text-scooter-500 dark:hover:text-scooter-400 ${
-              pathName === "/about"
-                ? "text-scooter-500 dark:text-scooter-300 font-medium"
-                : ""
-            } `}
-          >
-            <Link
-              href={"/about"}
-              aria-current={pathName === "/about" ? "page" : undefined}
-            >
-              About
-            </Link>
-          </li>
+        <ul className="hidden sm:flex space-x-4">
+          {navLinks.map((link) => {
+            const isActive = pathName === link.path;
+            return (
+              <li
+                key={link.name}
+                className={`${
+                  isActive ? "font-bold text-fh-blue-50" : "font-normal"
+                } text-white`}
+              >
+                <Link href={link.path}>{link.name}</Link>
+              </li>
+            );
+          })}
         </ul>
       </nav>
     </header>
