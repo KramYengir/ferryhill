@@ -15,10 +15,10 @@ const Navbar = () => {
   const pathName = usePathname();
 
   return (
-    <header className=" bg-fh-blue-950 ">
-      <nav className="flex flex-col justify-center items-center pt-2 pb-4 px-4 max-w-screen-xl mx-auto">
+    <header className="bg-[url('../assets/images/fish-in-oil.png')] bg-cover bg-center bg-no-repeat bg-fixed ">
+      <nav className="flex flex-col justify-center items-center pt-2 pb-4 px-4  mx-auto bg-neutral-950 bg-opacity-80 backdrop-blur-sm">
         <Link href={"/"}>
-          <Image src={logo} width={124} alt="logo of restaurant" />
+          <Image src={logo} width={132} alt="logo of restaurant" />
         </Link>
 
         <ul className="flex space-x-4">
@@ -28,8 +28,8 @@ const Navbar = () => {
               <li
                 key={link.name}
                 className={`${
-                  isActive ? "font-bold text-fh-blue-50" : "font-normal"
-                } text-white`}
+                  isActive ? "font-bold text-fh-gold-500" : "font-normal"
+                } text-white hover:text-fh-blue-500 focus-within:text-fh-blue-500`}
               >
                 <Link href={link.path}>{link.name}</Link>
               </li>
