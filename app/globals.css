@@ -2,6 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .btn-primary {
+    @apply bg-fh-blue-700 text-white font-semibold py-2 px-4 rounded-md hover:bg-opacity-75 hover:outline focus-visible:bg-opacity-75;
+  }
+  .btn-secondary {
+    @apply bg-fh-gold-600 text-white font-semibold py-2 px-4 rounded-md hover:bg-opacity-75 hover:outline focus-visible:bg-opacity-75;
+  }
+  .btn-outline {
+    @apply bg-transparent text-fh-blue-400 font-semibold py-2 px-4 rounded-md outline outline-fh-blue-700 hover:bg-fh-blue-700 hover:text-white hover:outline-none focus-visible:bg-fh-blue-700 focus-visible:text-white focus-visible:outline-white;
+  }
+
+  .btn-primary,
+  .btn-secondary,
+  .btn-outline {
+    @apply transition-all duration-200 ease-in-out;
+  }
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
