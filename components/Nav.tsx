@@ -28,8 +28,10 @@ const Navbar = () => {
               <li
                 key={link.name}
                 className={`${
-                  isActive ? "font-bold text-fh-gold-500" : "font-normal"
-                } text-white hover:text-fh-blue-500 focus-within:text-fh-blue-500`}
+                  isActive
+                    ? "font-bold text-fh-blue-500"
+                    : "font-normal text-white"
+                }  hover:text-fh-blue-500 focus-within:text-fh-blue-500`}
               >
                 <Link href={link.path}>{link.name}</Link>
               </li>
