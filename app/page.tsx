@@ -4,6 +4,7 @@ import Image from "next/image";
 import ScrollAnimatedSection from "@/components/ScrollAnimatedSection";
 import paintingIMG from "@/assets/images/painting.jpg";
 import fishIMG from "@/assets/images/fish_chips.png";
+import fishMealIMG from "@/assets/images/FH_fish-meal.jpeg";
 
 export default function HomePage() {
   return (
@@ -28,9 +29,33 @@ export default function HomePage() {
               ever since the 1500s, when an unknown printer took a galley of
               type and scrambled it to make a type specimen book.{" "}
             </p>
-            <button className=" btn-secondary mt-4">About Us</button>
+            <button className=" btn-primary mt-4">About Us</button>
           </article>
         </section>
+      </div>
+
+      {/* second section */}
+      <div className="bg-[url('../assets/images/FH_fish-meal.jpeg')] bg-cover bg-center bg-fixed bg-no-repeat">
+        <div className="bg-fh-blue-700 bg-opacity-85 ">
+          <section className="flex flex-wrap flex-row-reverse md:gap-16 justify-center max-w-screen-xl text-left py-20 px-12 mx-auto ">
+            <div className="flex-1 flex justify-center items-center min-w-72 mb-8">
+              <Image src={fishIMG} alt="fish and chips ina  tray"></Image>
+            </div>
+            <article className="max-w-sm flex flex-col  justify-center">
+              <h2 className="text-balance text-white text-4xl uppercase font-bold tracking-wide">
+                Fresh, Sustainable, Line-Caught Fish Delivered Daily
+              </h2>
+              <hr className=" border-b-1 border-white my-2" />
+              <p className="text-balance text-white">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry standard dummy text
+                ever since the 1500s, when an unknown printer took a galley of
+                type and scrambled it to make a type specimen book.{" "}
+              </p>
+              <button className=" btn-secondary mt-4">Our Menu</button>
+            </article>
+          </section>
+        </div>
       </div>
     </main>
   );
