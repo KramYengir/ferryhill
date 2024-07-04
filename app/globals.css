@@ -91,4 +91,31 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  /* Add a fade-in animation to elements on scroll */
+
+  /* Define the fade-in animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Hide elements initially */
+  .fade-in-element {
+    opacity: 0.25;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  }
+
+  /* When elements are in view */
+  .fade-in-element.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
