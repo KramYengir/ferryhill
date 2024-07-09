@@ -21,14 +21,14 @@ const ReviewsSection = () => {
   return (
     <div className="bg-[url('../assets/images/FH_fish-meal.jpeg')] bg-cover bg-center bg-fixed bg-no-repeat">
       <div className="bg-fh-blue-700 bg-opacity-85 ">
-        <section className="flex flex-col justify-center items-center max-w-screen-xl py-20 px-12 mx-auto ">
+        <section className="flex flex-col justify-center items-center max-w-screen-xl 2xl:max-w-screen-2xl py-20 px-12 mx-auto ">
           <h2 className="text-4xl text-balance text-center text-white my-4 uppercase font-bold tracking-wide">
             What our customers have to say
           </h2>
           <p className="text-balance text-center text-white italic mb-12 ">
             With over 300 reviews on Google, we know what our customers like
           </p>
-          <Carousel className="w-full md:max-w-screen-lg">
+          <Carousel className="w-full md:max-w-screen-lg 2xl:max-w-screen-xl">
             <CarouselContent className="flex md:px-4 md:gap-4">
               <CarouselItem className="flex md:basis-1/2 2xl:basis-1/3 ">
                 <Card className=" flex flex-col justify-center p-6 leading-6 bg-fh-blue-950 bg-opacity-25  text-white border-none">
