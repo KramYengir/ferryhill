@@ -31,9 +31,9 @@ const ReviewsSection = () => {
           <Carousel className="w-full md:max-w-screen-lg 2xl:max-w-screen-xl my-6">
             <CarouselContent className="flex md:px-4 md:gap-4">
               <CarouselItem className="flex md:basis-1/2 2xl:basis-1/3 ">
-                <Card className=" flex flex-col justify-center p-6 leading-6 bg-fh-blue-950 bg-opacity-25  text-white border-none">
+                <Card className=" flex flex-col justify-center p-6 leading-6 bg-fh-blue-950 bg-opacity-45  text-white border-none">
                   <CardContent>
-                    <p>
+                    <p className="italic">
                       Treated ourselves to fish and chips, and we were not
                       disappointed. Met by friendly staff who had lovely smiles
                       on their faces as usual. The fish batter was crispy, the
@@ -43,14 +43,14 @@ const ReviewsSection = () => {
                     </p>
                   </CardContent>
                   <CardFooter>
-                    <p className="italic">- Tracy Townson</p>
+                    <p className="font-extralight">- Tracy Townson</p>
                   </CardFooter>
                 </Card>
               </CarouselItem>
               <CarouselItem className="flex md:basis-1/2 2xl:basis-1/3 ">
-                <Card className="flex flex-col justify-center p-6 leading-6 bg-fh-blue-950 bg-opacity-25  text-white border-none">
+                <Card className="flex flex-col justify-center p-6 leading-6 bg-fh-blue-950 bg-opacity-45  text-white border-none">
                   <CardContent>
-                    <p>
+                    <p className="italic">
                       Best place in Salford to get fresh fish and homemade chips
                       as well as many more delicious things! Chris and his staff
                       are very helpful and polite and the shop is really
@@ -58,14 +58,14 @@ const ReviewsSection = () => {
                     </p>
                   </CardContent>
                   <CardFooter>
-                    <p className="italic">- Nagia Ropotia</p>
+                    <p className="font-extralight">- Nagia Ropotia</p>
                   </CardFooter>
                 </Card>
               </CarouselItem>
               <CarouselItem className="flex md:basis-1/2 2xl:basis-1/3 ">
-                <Card className="flex flex-col justify-center p-6 leading-6 bg-fh-blue-950 bg-opacity-25  text-white border-none">
+                <Card className="flex flex-col justify-center p-6 leading-6 bg-fh-blue-950 bg-opacity-45  text-white border-none">
                   <CardContent>
-                    <p>
+                    <p className="italic">
                       Every time I come in this place I am served with well
                       cooked and tasty fish. The place is always very clean and
                       tidy and the personnel quite friendly with the customers.
@@ -73,14 +73,16 @@ const ReviewsSection = () => {
                     </p>
                   </CardContent>
                   <CardFooter>
-                    <p className="italic">- Alexandros Oustamanolakis</p>
+                    <p className="font-extralight">
+                      - Alexandros Oustamanolakis
+                    </p>
                   </CardFooter>
                 </Card>
               </CarouselItem>
-              <CarouselItem className="flex md:basis-1/2 2xl:basis-1/3 ">
-                <Card className="flex flex-col justify-center p-6 leading-6 bg-fh-blue-950 bg-opacity-25  text-white border-none">
+              <CarouselItem className="flex md:basis-1/4 2xl:basis-1/3 ">
+                <Card className="flex flex-col justify-center p-6 leading-6 bg-fh-blue-950 bg-opacity-45  text-white border-none">
                   <CardContent>
-                    <p>
+                    <p className="italic">
                       Food is absolutely delicious. There are lots of choices. I
                       had cod chips and mushy peas and ate every bit. No
                       complaints at all. It is rare I think for a chippy to cook
@@ -89,27 +91,27 @@ const ReviewsSection = () => {
                     </p>
                   </CardContent>
                   <CardFooter>
-                    <p className="italic">- Veronica Witchywoo</p>
+                    <p className="font-extralight">- Veronica Witchywoo</p>
                   </CardFooter>
                 </Card>
               </CarouselItem>
               <CarouselItem className="flex md:basis-1/2 2xl:basis-1/3 ">
-                <Card className="flex flex-col justify-center p-6 leading-6 bg-fh-blue-950 bg-opacity-25  text-white border-none">
+                <Card className="flex flex-col justify-center p-6 leading-6 bg-fh-blue-950 bg-opacity-45  text-white border-none">
                   <CardContent>
-                    <p>
+                    <p className="italic">
                       Lovely fish and chips! A clean, well organised shop and
                       the girl serving was super friendly too. We&apos;ll be
                       making this our regular on the back of this experience 🙂
                     </p>
                   </CardContent>
                   <CardFooter>
-                    <p className="italic">- Nick Kendal</p>
+                    <p className="font-extralight">- Nick Kendal</p>
                   </CardFooter>
                 </Card>
               </CarouselItem>
             </CarouselContent>
             <CarouselPrevious className="cursor-pointer m-2" />
-            <CarouselNext className="cursor-pointer m-2" />
+            <CarouselNext className="c4rsor-pointer m-2" />
           </Carousel>
         </section>
       </div>

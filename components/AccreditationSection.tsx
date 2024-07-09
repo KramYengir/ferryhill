@@ -16,7 +16,7 @@ const AccreditationSection = () => {
   return (
     <div className="bg-[url('../assets/images/FH_fish_heater.jpeg')] bg-cover bg-center bg-fixed bg-no-repeat">
       <div className="bg-neutral-950 bg-opacity-70 backdrop-blur-sm">
-        <section className="flex flex-wrap gap-16  justify-evenly max-w-screen-xl text-center py-20 px-12 mx-auto ">
+        <section className="flex flex-wrap gap-16  justify-evenly max-w-screen-xl text-center py-28 px-12 mx-auto ">
           <Card className="flex-1 grid justify-items-center items-end bg-neutral-950 bg-opacity-65 min-w-[300px] max-w-sm">
             <CardContent className="flex flex-col items-center max-w-xs">
               <Image
