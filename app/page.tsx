@@ -6,6 +6,7 @@ import paintingIMG from "@/assets/images/painting.jpg";
 import fishIMG from "@/assets/images/fish_chips.png";
 import fishMealIMG from "@/assets/images/FH_fish-meal.jpeg";
 import ReviewsSection from "@/components/ReviewsSection";
+import AccreditationSection from "@/components/AccreditationSection";
 
 export default function HomePage() {
   return (
@@ -40,7 +41,7 @@ export default function HomePage() {
 
       {/* third section */}
       <div className="bg-[url('../assets/images/tiled_bg.png')] bg-cover bg-center bg-fixed bg-no-repeat">
-        <section className="flex flex-wrap flex-row-reverse md:gap-16 justify-center max-w-screen-xl text-left py-20 px-12 mx-auto ">
+        <section className="flex flex-wrap  md:gap-16 justify-center max-w-screen-xl text-left py-20 px-12 mx-auto ">
           <div className="flex-1 flex justify-center items-center min-w-72 mb-8">
             <Image src={fishIMG} alt="fish and chips ina  tray"></Image>
           </div>
@@ -59,6 +60,9 @@ export default function HomePage() {
           </article>
         </section>
       </div>
+
+      {/* forth section  */}
+      <AccreditationSection />
     </main>
   );
 }
