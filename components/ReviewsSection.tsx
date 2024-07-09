@@ -28,7 +28,7 @@ const ReviewsSection = () => {
           <p className="text-balance text-center text-white italic mb-12 ">
             With over 300 reviews on Google, we know what our customers like
           </p>
-          <Carousel className="w-full md:max-w-screen-lg 2xl:max-w-screen-xl">
+          <Carousel className="w-full md:max-w-screen-lg 2xl:max-w-screen-xl my-6">
             <CarouselContent className="flex md:px-4 md:gap-4">
               <CarouselItem className="flex md:basis-1/2 2xl:basis-1/3 ">
                 <Card className=" flex flex-col justify-center p-6 leading-6 bg-fh-blue-950 bg-opacity-25  text-white border-none">
