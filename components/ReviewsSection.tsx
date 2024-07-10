@@ -52,12 +52,12 @@ const ReviewsSection = () => {
                   </CardFooter>
                 </Card>
               </CarouselItem>
-              <CarouselItem className="flex md:basis-1/2 xl:basis-1/3 ">
+              <CarouselItem className="flex justify-center md:basis-1/2 xl:basis-1/3 ">
                 <Card className="flex flex-col justify-center p-6 leading-6 bg-fh-blue-950 bg-opacity-45  text-white border-none">
                   <CardContent>
                     <p className="italic max-w-sm">
                       Heard about this place for a while now so gave it a go and
-                      wasn:apos;t disappointed , excellent staff and friendly,
+                      wasn&apos;t disappointed , excellent staff and friendly,
                       excellent service and fantastic food , definitely worth a
                       revisit.
                     </p>
@@ -67,7 +67,7 @@ const ReviewsSection = () => {
                   </CardFooter>
                 </Card>
               </CarouselItem>
-              <CarouselItem className="flex md:basis-1/2 xl:basis-1/3 ">
+              <CarouselItem className="flex justify-center md:basis-1/2 xl:basis-1/3 ">
                 <Card className="flex flex-col justify-center p-6 leading-6 bg-fh-blue-950 bg-opacity-45  text-white border-none">
                   <CardContent>
                     <p className="italic max-w-sm">
@@ -84,7 +84,7 @@ const ReviewsSection = () => {
                   </CardFooter>
                 </Card>
               </CarouselItem>
-              <CarouselItem className="flex md:basis-1/2 xl:basis-1/3 ">
+              <CarouselItem className="flex justify-center md:basis-1/2 xl:basis-1/3 ">
                 <Card className="flex flex-col justify-center p-6 leading-6 bg-fh-blue-950 bg-opacity-45  text-white border-none">
                   <CardContent>
                     <p className="italic max-w-sm">
@@ -100,7 +100,7 @@ const ReviewsSection = () => {
                   </CardFooter>
                 </Card>
               </CarouselItem>
-              <CarouselItem className="flex md:basis-1/2 xl:basis-1/3 ">
+              <CarouselItem className="flex justify-center md:basis-1/2 xl:basis-1/3 ">
                 <Card className="flex flex-col justify-center p-6 leading-6 bg-fh-blue-950 bg-opacity-45  text-white border-none">
                   <CardContent>
                     <p className="italic max-w-sm">
