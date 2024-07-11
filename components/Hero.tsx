@@ -6,7 +6,10 @@ import { ChevronDown } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="bg-[url('../assets/images/fish-in-oil.png')] bg-cover bg-center bg-no-repeat bg-fixed">
+    <section
+      id="hero"
+      className="bg-[url('../assets/images/fish-in-oil.png')] bg-cover bg-center bg-no-repeat bg-fixed"
+    >
       <div className="relative min-h-[80vh] flex flex-col items-center text-center bg-neutral-950 bg-opacity-80 backdrop-blur-sm">
         <div className="relative w-[90vw] aspect-square sm:max-w-sm mt-24 ">
           <Image
