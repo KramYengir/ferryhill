@@ -15,13 +15,16 @@ const Navbar = () => {
   const pathName = usePathname();
 
   return (
-    <header className="bg-[url('../assets/images/fish-in-oil.png')] bg-cover bg-center bg-no-repeat bg-fixed ">
+    <header
+      id="header"
+      className="bg-[url('../assets/images/fish-in-oil.png')] bg-cover bg-center bg-no-repeat bg-fixed "
+    >
       <nav className="flex flex-col justify-center items-center pt-2 pb-4 px-4  mx-auto bg-neutral-950 bg-opacity-80 backdrop-blur-sm">
         <Link href={"/"}>
           <Image src={logo} width={132} alt="logo of restaurant" />
         </Link>
 
-        <ul className="flex space-x-4">
+        <ul className="flex gap-6 px-6 py-2 bg-neutral-900 bg-opacity-60 rounded-xl overflow-hidden">
           {navLinks.map((link) => {
             const isActive = pathName === link.path;
             return (
