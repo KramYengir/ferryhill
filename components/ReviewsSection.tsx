@@ -1,6 +1,4 @@
 import React from "react";
-import Image from "next/image";
-import fishIMG from "../assets/images/fish_chips.png";
 import {
   Card,
   CardContent,
@@ -20,7 +18,7 @@ import {
 
 const ReviewsSection = () => {
   return (
-    <div className="bg-[url('../assets/images/FH_fish-meal.jpeg')] bg-cover bg-center bg-fixed bg-no-repeat">
+    <div className="bg-[url('../assets/images/FH_fish_meal.jpeg')] bg-cover bg-center bg-fixed bg-no-repeat">
       <div className="bg-fh-blue-700 bg-opacity-85 ">
         <section className="flex flex-col justify-center items-center max-w-screen-xl 2xl:max-w-screen-2xl py-20 px-12 mx-auto ">
           <h2 className="text-4xl text-balance text-center text-white my-4 uppercase font-bold tracking-wide">
