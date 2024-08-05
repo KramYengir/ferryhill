@@ -25,7 +25,7 @@ const Footer = () => {
           </p>
         </Link>
         <Link
-          href={"#hero"}
+          href={"#header"}
           className="absolute bottom-1/4 right-4 flex items-center gap-2 text-white text-sm hover:text-fh-blue-500"
         >
           <ChevronUpCircle size={16} className="sm:hidden" />
