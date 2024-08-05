@@ -12,6 +12,7 @@ import {
 import {
   Carousel,
   CarouselContent,
+  CarouselDots,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
@@ -116,7 +117,8 @@ const ReviewsSection = () => {
               </CarouselItem>
             </CarouselContent>
             <CarouselPrevious className="cursor-pointer m-2" />
-            <CarouselNext className="c4rsor-pointer m-2" />
+            <CarouselNext className="cursor-pointer m-2" />
+            <CarouselDots className="mt-6" />
           </Carousel>
         </section>
       </div>
