@@ -13,6 +13,10 @@ const Hero = () => {
       <div className="flex flex-col items-center text-center pt-12 pb-24 bg-neutral-950 bg-opacity-80 backdrop-blur-sm">
         <div className=" w-[80vw] aspect-square sm:max-w-sm">
           <Image src={heroImg} alt="welcome message for ferryhill" />
+          <h1 className="sr-only">Welcome to our Ferryhill Fish and Chips</h1>
+          <p className="sr-only">
+            Traditional fish and chips in the heart of irlam, manchester
+          </p>
         </div>
         <div className="flex gap-6 mb-24">
           <Link href={"/menu"} className=" btn-primary">
