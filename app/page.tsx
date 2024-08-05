@@ -1,10 +1,6 @@
 import Hero from "@/components/Hero";
 import Image from "next/image";
-import paintingIMG from "@/assets/images/painting.jpg";
 import fishIMG from "@/assets/images/fish_chips.png";
-import fishMealIMG from "@/assets/images/FH_fish-meal.jpeg";
-import potatoesIMG from "@/assets/images/FH_potatoes.png";
-import hoursIMG from "@/assets/images/FH_hours.png";
 import ReviewsSection from "@/components/ReviewsSection";
 import AccreditationSection from "@/components/AccreditationSection";
 import OpeningHours from "@/components/OpeningHours";
@@ -51,13 +47,13 @@ export default function HomePage() {
           </h2>
           <div className="flex flex-row-reverse flex-wrap gap-8 items-center justify-evenly max-w-screen-xl text-left py-20 px-12 mx-auto">
             <OpeningHours />
-            <article className="max-w-sm flex flex-col gap-4 justify-center text-center bg-white bg-opacity-10  rounded-md p-8 ">
+            <article className="max-w-sm flex flex-col gap-6 justify-center text-center py-16 bg-fh-blue-600 rounded-md p-8 ">
               {/* <hr className=" border-b-1 border-fh-blue-900 my-2" /> */}
-              <p className="text-balance text-lg  max-w-prose">
+              <p className="text-white font-bold text-lg  max-w-prose">
                 Be sure to check our social media pages or get in touch with us
                 for any up-to-date changes{" "}
               </p>
-              <button className=" btn-primary mt-4">Contact us</button>
+              <button className=" btn-secondary mt-4">Contact us</button>
             </article>
           </div>
         </section>
