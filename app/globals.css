@@ -98,28 +98,22 @@ html {
 
   /* Add a fade-in animation to elements on scroll */
 
+  .fade-in-element {
+    animation: fadeIn linear;
+    animation-timeline: view();
+    animation-range-start: 100px;
+    animation-range-end: 600px;
+  }
+
   /* Define the fade-in animation */
   @keyframes fadeIn {
     from {
-      opacity: 0;
-      transform: translateY(20px);
+      opacity: 0.25;
+      scale: 0.5;
     }
     to {
       opacity: 1;
-      transform: translateY(0);
+      scale: 1;
     }
-  }
-
-  /* Hide elements initially */
-  .fade-in-element {
-    opacity: 0.25;
-    transform: translateY(20px);
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-  }
-
-  /* When elements are in view */
-  .fade-in-element.visible {
-    opacity: 1;
-    transform: translateY(0);
   }
 }
