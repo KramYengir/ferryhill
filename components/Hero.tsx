@@ -8,18 +8,13 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="bg-[url('../assets/images/fish-in-oil.png')] bg-cover bg-center bg-no-repeat bg-fixed"
+      className="flex flex-col  bg-[url('../assets/images/fish-in-oil.png')] bg-cover bg-center bg-no-repeat bg-fixed"
     >
-      <div className="relative min-h-[80vh] flex flex-col items-center text-center bg-neutral-950 bg-opacity-80 backdrop-blur-sm">
-        <div className="relative w-[90vw] aspect-square sm:max-w-sm mt-24 ">
-          <Image
-            src={heroImg}
-            fill
-            sizes="100vh"
-            alt="welcome message for ferryhill"
-          />
+      <div className="flex flex-col items-center text-center pt-12 pb-24 bg-neutral-950 bg-opacity-80 backdrop-blur-sm">
+        <div className=" w-[80vw] aspect-square sm:max-w-sm">
+          <Image src={heroImg} alt="welcome message for ferryhill" />
         </div>
-        <div className="flex gap-6">
+        <div className="flex gap-6 mb-24">
           <Link href={"/menu"} className=" btn-primary">
             Our Menu
           </Link>
@@ -29,7 +24,7 @@ const Hero = () => {
         </div>
         <Link
           href="#reputation"
-          className="absolute bottom-4 text-white hover:text-fh-gold-500"
+          className=" text-white hover:text-fh-gold-500"
           aria-roledescription="scroll down to the section below"
         >
           <ChevronDown size={48} />
