@@ -10,7 +10,7 @@ export default function HomePage() {
     <>
       <Hero />
 
-      <div className="bg-[url('../assets/images/tiled_bg.png')] bg-cover bg-center bg-no-repeat">
+      <div className="">
         <section
           id="reputation"
           className="fade-in-element flex flex-wrap md:gap-16 justify-center max-w-screen-xl text-left py-20 px-12 mx-auto bg-white bg-opacity-10"
@@ -18,13 +18,13 @@ export default function HomePage() {
           <div className="flex-1 flex justify-center items-center min-w-72 mb-8">
             <Image src={fishIMG} alt="fish and chips in a tray"></Image>
           </div>
-          <article className="max-w-sm flex flex-col justify-center">
+          <article className="max-w-sm flex flex-col gap-4 justify-center">
             <h2 className="text-balance text-fh-blue-700 text-4xl uppercase font-bold tracking-wide">
               Voted Salfords{" "}
               <span className="text-fh-gold-500 text-5xl">Best Chippy</span> in
               2023!
             </h2>
-            <hr className=" border-b-1 border-fh-blue-900 my-2" />
+            {/* <hr className=" border-b-1 border-fh-blue-900 my-2" /> */}
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry standard dummy text
