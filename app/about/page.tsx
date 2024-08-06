@@ -11,7 +11,7 @@ const AboutPage = () => {
         Our Story
       </h1>
 
-      <div className="py-24 bg-fh-blue-950 ">
+      <div className="py-24 bg-fh-blue-900 ">
         <div className="flex flex-wrap justify-evenly gap-4 max-w-screen-xl px-6 mx-auto">
           <div className="flex flex-col gap-4 justify-center">
             <h2 className="text-left capitalize text-2xl tracking-wider text-white font-bold mb-4">
