@@ -2,6 +2,7 @@ import React from "react";
 import paintingIMG from "@/assets/images/painting.jpg";
 import christosIMG from "@/assets/images/FH_christos.jpg";
 import mealImg from "@/assets/images/FH_fish_meal.jpeg";
+import communityImg from "@/assets/images/FH_christos_pitchside.jpg";
 import AboutSection from "@/components/AboutSection";
 import { StaticImageData } from "next/image";
 
@@ -12,6 +13,7 @@ interface AboutInfoItem {
   image: StaticImageData;
   imageAlt: string;
   color: "stone" | "blue" | "white";
+  reversed: boolean;
 }
 
 const aboutInfo: AboutInfoItem[] = [
@@ -21,6 +23,7 @@ const aboutInfo: AboutInfoItem[] = [
     image: paintingIMG,
     imageAlt: "painting of ferryhil fish and chips",
     color: "stone",
+    reversed: false,
   },
   {
     heading: "Our Standards...",
@@ -28,6 +31,7 @@ const aboutInfo: AboutInfoItem[] = [
     image: christosIMG,
     imageAlt: "Christos, owner of ferryhill",
     color: "white",
+    reversed: true,
   },
   {
     heading: "our food...",
@@ -35,6 +39,16 @@ const aboutInfo: AboutInfoItem[] = [
     image: mealImg,
     imageAlt: "fish and chips on some white paper",
     color: "blue",
+    reversed: false,
+  },
+  {
+    heading: "our community...",
+    text: "We're deeply rooted in our local community, actively supporting charitable causes through fundraisers, participating in local events, and proudly backing our local football team.",
+    image: communityImg,
+    imageAlt:
+      "ferryhill owner Christos kneeling beside a pitchside ad board for his business",
+    color: "white",
+    reversed: true,
   },
 ];
 
@@ -55,6 +69,7 @@ const AboutPage = () => {
           image={info.image}
           imageAlt={info.imageAlt}
           color={info.color}
+          reversed={info.reversed}
         />
       ))}
     </div>
