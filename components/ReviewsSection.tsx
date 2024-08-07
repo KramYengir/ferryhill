@@ -18,9 +18,12 @@ import {
 
 const ReviewsSection = () => {
   return (
-    <div className="bg-[url('../assets/images/FH_fish_meal.jpeg')] bg-cover bg-center bg-fixed bg-no-repeat">
+    <section
+      id="reviews"
+      className="bg-[url('../assets/images/FH_fish_meal.jpeg')] bg-cover bg-center bg-fixed bg-no-repeat"
+    >
       <div className="bg-fh-blue-700 bg-opacity-85 ">
-        <section className="flex flex-col justify-center items-center max-w-screen-xl 2xl:max-w-screen-2xl py-20 px-12 mx-auto ">
+        <div className="flex flex-col justify-center items-center max-w-screen-xl 2xl:max-w-screen-2xl py-20 px-12 mx-auto ">
           <h2 className="text-4xl text-balance text-center text-white my-4 uppercase font-bold tracking-wide">
             What our customers have to say
           </h2>
@@ -118,9 +121,9 @@ const ReviewsSection = () => {
             <CarouselNext className="cursor-pointer m-2" />
             <CarouselDots className="mt-6" />
           </Carousel>
-        </section>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 
