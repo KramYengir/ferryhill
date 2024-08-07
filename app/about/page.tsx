@@ -6,12 +6,14 @@ import Image from "next/image";
 
 const AboutPage = () => {
   return (
-    <div className="w-full pb-16">
-      <h1 className="text-8xl uppercase font-extrabold tracking-wide text-center bg-clip-text text-transparent my-24  bg-[url('../assets/images/fish-in-oil.png')] bg-cover bg-center bg-no-repeat bg-fixed">
-        Our Story
-      </h1>
+    <div className="grid w-full  bg-[url('../assets/images/FH_fish_meal.jpeg')] bg-cover bg-center bg-no-repeat bg-fixed">
+      <div className="bg-white">
+        <h1 className="text-8xl uppercase font-extrabold tracking-wide text-center bg-clip-text text-transparent my-24  bg-[url('../assets/images/fish-in-oil.png')] bg-cover bg-center bg-no-repeat bg-fixed">
+          Our Story
+        </h1>
+      </div>
 
-      <div className="py-24 bg-fh-blue-900 ">
+      <div className=" bg-fh-blue-900 py-24 bg-opacity-90">
         <div className="flex flex-wrap justify-evenly gap-4 max-w-screen-xl px-6 mx-auto">
           <div className="flex flex-col gap-4 justify-center">
             <h2 className="text-left capitalize text-2xl tracking-wider text-white font-bold mb-4">
@@ -33,7 +35,7 @@ const AboutPage = () => {
         </div>
       </div>
 
-      <div className="py-24 ">
+      <div className="bg-white bg-opacity-95 py-24 ">
         <div className="flex flex-wrap flex-row-reverse justify-evenly gap-4 max-w-screen-xl px-6 mx-auto">
           <div className="flex flex-col gap-4 justify-center">
             <h2 className="text-left capitalize text-2xl tracking-wider text-fh-blue-800 font-bold mb-4">
@@ -52,7 +54,7 @@ const AboutPage = () => {
         </div>
       </div>
 
-      <div className="bg-fh-blue-900 py-24">
+      <div className="bg-fh-blue-900 bg-opacity-90 py-24 ">
         <div className="flex flex-wrap justify-evenly gap-4 max-w-screen-xl px-6 mx-auto">
           <div className="flex flex-col gap-4 justify-center">
             <h2 className="text-left capitalize text-2xl tracking-wider text-white font-bold mb-4">
