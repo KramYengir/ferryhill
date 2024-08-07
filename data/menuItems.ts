@@ -1,6 +1,9 @@
+import { info } from "console";
+
 export const menuItems = [
   {
     name: "Fish",
+    info: "Our fish are line-caught from sustainable fishing grounds, delivered fresh every day",
     items: [
       {
         id: 1,
@@ -30,7 +33,7 @@ export const menuItems = [
       },
       {
         id: 5,
-        name: "Breaded Fishcake",
+        name: "Breaded Homemade Fishcake",
         price: 2.2,
       },
       {
@@ -41,16 +44,19 @@ export const menuItems = [
       {
         id: 7,
         name: "Calamari Rings",
+        info: "Portion of 6",
         price: 5.5,
       },
       {
         id: 8,
         name: "Salt & Pepper Squid",
+        info: "Portion of 8",
         price: 5.5,
       },
       {
         id: 9,
         name: "Breaded Scampi",
+        info: "Portion of 8",
         price: 4.5,
       },
       {
@@ -71,6 +77,7 @@ export const menuItems = [
   },
   {
     name: "Chips & More",
+    info: "Our chips are made from quality potatoes, peeled and chipped fresh on the day",
     items: [
       {
         id: 12,

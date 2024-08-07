@@ -22,7 +22,7 @@ const MenuCategory: React.FC<MenuCategoryProps> = ({ category }) => {
         {category.name}
       </h2>
       {category.info && (
-        <p className="text-sm px-2 max-w-prose font-light mt-2">
+        <p className="text-xl px-2 max-w-prose font-light mt-2">
           {category.info}
         </p>
       )}
