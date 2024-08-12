@@ -14,7 +14,7 @@ export default function HomePage() {
       <ReviewsSection />
 
       {/* third section */}
-      <div className="bg-[url('../assets/images/tiled_bg.png')] bg-cover bg-center bg-fixed bg-no-repeat">
+      <div className="bg-[url('../assets/images/tiled_bg.webp')] bg-cover bg-center bg-fixed bg-no-repeat">
         <section className="pt-20">
           <h2 className="text-balance text-fh-blue-700 text-4xl uppercase font-bold tracking-wide text-center">
             Opening hours
