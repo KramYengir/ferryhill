@@ -334,7 +334,8 @@ export const menuItems = [
     ],
   },
   {
-    name: "Gluten Free Monday & Tuesday",
+    name: "Gluten Free",
+    info: "Available Monday & Tuesday",
     items: [
       {
         id: 51,
