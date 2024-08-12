@@ -14,7 +14,7 @@ const MenuItem: React.FC<MenuItemProps> = ({ item }) => {
   return (
     <div className="bg-white p-4 mb-4 rounded shadow">
       <div className="flex justify-between items-center">
-        <h3>{item.name}</h3>
+        <h3 className="text-lg font-semibold">{item.name}</h3>
         {item.price !== undefined && <span>{`£${item.price.toFixed(2)}`}</span>}
       </div>
       {item.sizes && (
