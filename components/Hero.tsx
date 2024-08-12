@@ -27,7 +27,7 @@ const Hero = () => {
           </Link>
         </div>
         <Link
-          href="#reputation"
+          href="#nutshell"
           className=" text-white hover:text-fh-gold-500"
           aria-roledescription="scroll down to the section below"
         >
