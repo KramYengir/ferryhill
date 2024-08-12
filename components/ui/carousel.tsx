@@ -286,7 +286,7 @@ const CarouselDots = React.forwardRef<
             key={i}
             className={`mx-2 h-2 w-2 sm:mx-3 sm:h-3 sm:w-3 rounded-full p-0 hover:scale-125 hover:transform ${
               i === currentSlide
-                ? "scale-125 transform bg-fh-gold-500 hover:bg-fh-gold-200"
+                ? "scale-125 transform bg-fh-gold-400 hover:bg-fh-gold-500"
                 : "bg-neutral-100 hover:bg-gray-300"
             }`}
             aria-label={`Go to slide ${i + 1}`}
