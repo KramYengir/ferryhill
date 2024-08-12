@@ -17,8 +17,8 @@ interface MenuCategoryProps {
 
 const MenuCategory: React.FC<MenuCategoryProps> = ({ category }) => {
   return (
-    <section className="mb-16">
-      <h2 className="text-2xl uppercase font-bold text-white bg-fh-blue-700 px-2 py-1 rounded">
+    <section className="mb-16 break-inside-avoid">
+      <h2 className="text-2xl uppercase font-bold text-white bg-fh-blue-900 px-2 py-1 rounded">
         {category.name}
       </h2>
       {category.info && (
@@ -29,27 +29,7 @@ const MenuCategory: React.FC<MenuCategoryProps> = ({ category }) => {
 
       <div className="mt-4">
         {category.items.map((item) => (
-          <div key={item.id} className="bg-white p-4 mb-4 rounded shadow">
-            <div className="flex justify-between items-center">
-              <h3 className="text-lg font-semibold">{item.name}</h3>
-              {item.price !== undefined && (
-                <span className="text-lg font-semibold">{`£${item.price.toFixed(
-                  2
-                )}`}</span>
-              )}
-            </div>
-            {item.sizes && (
-              <ul className="mt-2">
-                {item.sizes.map((size, index) => (
-                  <li key={index} className="flex justify-between">
-                    <span>{size.size}</span>
-                    <span>{`£${size.price.toFixed(2)}`}</span>
-                  </li>
-                ))}
-              </ul>
-            )}
-            {item.info && <p className="mt-2 text-sm">{item.info}</p>}
-          </div>
+          <MenuItem key={item.id} item={item} />
         ))}
       </div>
     </section>

@@ -1,16 +1,33 @@
 import React from "react";
-import { MenuItemType } from "../types/types";
 
-const MenuItem = ({ item }: { item: MenuItemType }) => {
+interface MenuItemProps {
+  item: {
+    id: number;
+    name: string;
+    price?: number;
+    sizes?: { size: string; price: number }[];
+    info?: string;
+  };
+}
+
+const MenuItem: React.FC<MenuItemProps> = ({ item }) => {
   return (
-    <div className="px-2 ">
+    <div className="bg-white p-4 mb-4 rounded shadow">
       <div className="flex justify-between items-center">
-        <h3 className="text-lg font-semibold">{item.name}</h3>
-        <span className="text-xl font-bold text-fh-blue-600">
-          £{item.price.toFixed(2)}
-        </span>
+        <h3>{item.name}</h3>
+        {item.price !== undefined && <span>{`£${item.price.toFixed(2)}`}</span>}
       </div>
-      <small className="text-sm text-gray-700">{item.info}</small>
+      {item.sizes && (
+        <ul className="mt-2">
+          {item.sizes.map((size, index) => (
+            <li key={index} className="flex justify-between">
+              <span>{size.size}</span>
+              <span>{`£${size.price.toFixed(2)}`}</span>
+            </li>
+          ))}
+        </ul>
+      )}
+      {item.info && <p className="mt-2 text-sm">{item.info}</p>}
     </div>
   );
 };
