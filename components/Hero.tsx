@@ -28,8 +28,8 @@ const Hero = () => {
         </div>
         <Link
           href="#nutshell"
-          className=" text-white hover:text-fh-gold-500"
-          aria-roledescription="scroll down to the section below"
+          className="text-white hover:text-fh-gold-500"
+          aria-label="Scroll down to the section below"
         >
           <ChevronDown size={48} />
         </Link>
