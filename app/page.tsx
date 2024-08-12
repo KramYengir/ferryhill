@@ -1,6 +1,4 @@
 import Hero from "@/components/Hero";
-import Image from "next/image";
-import fishIMG from "@/assets/images/fish_chips.png";
 import ReviewsSection from "@/components/ReviewsSection";
 import AccreditationSection from "@/components/AccreditationSection";
 import OpeningHours from "@/components/OpeningHours";
