@@ -8,9 +8,9 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="flex flex-col  bg-[url('../assets/images/fish-in-oil.png')] bg-cover bg-center bg-no-repeat bg-fixed"
+      className="flex flex-col  bg-[url('../assets/images/fish_heater_portrait.png')] md:bg-[url('../assets/images/fish_heater_landscape.png')] bg-cover bg-center bg-no-repeat bg-fixed"
     >
-      <div className="flex flex-col items-center text-center pt-12 pb-24 bg-neutral-950 bg-opacity-80 backdrop-blur-sm">
+      <div className="flex flex-col items-center text-center pt-12 pb-24 ">
         <div className=" w-[80vw] aspect-square sm:max-w-sm">
           <Image src={heroImg} alt="welcome message for ferryhill" />
           <h1 className="sr-only">Welcome to our Ferryhill Fish and Chips</h1>

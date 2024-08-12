@@ -17,9 +17,9 @@ const Navbar = () => {
   return (
     <header
       id="header"
-      className="bg-[url('../assets/images/fish-in-oil.png')] bg-cover bg-center bg-no-repeat bg-fixed "
+      className="bg-[url('../assets/images/fish_heater_portrait.png')] md:bg-[url('../assets/images/fish_heater_landscape.png')] bg-cover bg-center bg-no-repeat bg-fixed "
     >
-      <nav className="flex flex-col justify-center items-center pt-2 pb-4 px-4  mx-auto bg-neutral-950 bg-opacity-80 backdrop-blur-sm">
+      <nav className="flex flex-col justify-center items-center pt-2 pb-4 px-4  mx-auto ">
         <Link href={"/"}>
           <Image src={logo} width={132} alt="logo of restaurant" />
         </Link>
