@@ -6,7 +6,7 @@ import { ChevronsUp, ChevronUpCircle } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-neutral-900 text-white">
+    <footer className="bg-neutral-800 text-white">
       <div className=" relative flex items-center justify-center max-w-screen-xl mx-auto p-2">
         <Link
           href={"https://www.rigneymade.com/"}
