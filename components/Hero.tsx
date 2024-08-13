@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="flex flex-col  bg-[url('../assets/images/fish_heater_portrait.webp')] md:bg-[url('../assets/images/fish_heater_landscape.webp')] bg-cover bg-center bg-no-repeat bg-fixed"
+      className="flex flex-col  bg-[url('../assets/images/fish_heater_portrait_2.webp')] md:bg-[url('../assets/images/fish_heater_landscape.webp')] bg-cover bg-center bg-no-repeat bg-fixed"
     >
       <div className="flex flex-col items-center text-center pt-12 pb-24 ">
         <div className=" w-[80vw] aspect-square sm:max-w-sm">
