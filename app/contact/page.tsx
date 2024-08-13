@@ -10,6 +10,30 @@ const ContactPage = () => {
           Get in touch
         </h1>
       </div>
+      <div className="flex flex-wrap gap-6 justify-evenly text-center py-12 px-6 bg-neutral-50">
+        <p className="max-w-sm">
+          <span className="text-lg font-semibold">
+            If you have any enquiries
+          </span>
+          , you can give us a call during opening hours and we&apos;ll be glad
+          to help!
+        </p>
+        <p className="max-w-sm">
+          <span className="text-lg font-semibold">
+            If you&apos;re not in a rush
+          </span>
+          , then send us an email and we&apos;ll get back to you as soon as
+          possible!
+        </p>
+        <p className="max-w-sm">
+          <span className="text-lg font-semibold">
+            To keep up-to-date with changes to our menu
+          </span>
+          , opening hours or any announcements, please check our Instagram,
+          which is updated frequently, or our Facebook page!
+        </p>
+      </div>
+
       <div className="flex flex-wrap lg:flex-nowrap justify-evenly gap-4 text-center bg-neutral-800 text-white">
         <div className="grid gap-12 py-16 lg:w-1/3">
           <div>
