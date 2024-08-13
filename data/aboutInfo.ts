@@ -1,4 +1,4 @@
-import paintingIMG from "@/assets/images/painting.jpg";
+import paintingIMG from "@/assets/images/painting_square_400.webp";
 import christosIMG from "@/assets/images/FH_christos.jpg";
 import mealImg from "@/assets/images/FH_fish_meal.jpeg";
 import communityImg from "@/assets/images/FH_christos_pitchside.jpg";
