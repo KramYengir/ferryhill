@@ -57,7 +57,7 @@ const AboutSection = ({
           </h2>
           <p className={`text-left text-lg max-w-sm ` + textColor}>{text}</p>
         </div>
-        <div className="flex rounded-md overflow-hidden sm:max-w-sm">
+        <div className="flex rounded-sm overflow-hidden w-full sm:max-w-md">
           <Image src={image} alt={imageAlt} layout="responsive" />
         </div>
       </div>
