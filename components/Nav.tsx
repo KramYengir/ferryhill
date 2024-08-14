@@ -17,7 +17,7 @@ const Navbar = () => {
   return (
     <header
       id="header"
-      className="bg-[url('../assets/images/fish_heater_portrait_2.webp')] md:bg-[url('../assets/images/fish_heater_landscape.webp')] bg-cover bg-center bg-no-repeat bg-fixed "
+      className="bg-[url('../assets/images/fish_heater_portrait_2.webp')] md:bg-[url('../assets/images/fish_meal.webp')] bg-cover bg-center bg-no-repeat bg-fixed "
     >
       <nav className="flex flex-col justify-center items-center pt-2 pb-4 px-4  mx-auto ">
         <Link href={"/"}>
