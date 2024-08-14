@@ -14,16 +14,16 @@ const ContactPage = () => {
       </div>
 
       {/* How to get in touch */}
-      <div className="flex flex-wrap lg:flex-nowrap justify-evenly items-start gap-4 text-center bg-neutral-50 text-fh-blue-900">
-        <div className="grid justify-center gap-6 min-h-64 p-8 shadow-md">
+      <div className="flex flex-wrap lg:flex-nowrap justify-evenly items-start gap-x-6 gap-y-0 text-center bg-neutral-50 text-fh-blue-900">
+        <div className="grid justify-center items-center min-h-96 px-8 py-12 shadow-xl sm:shadow-lg">
+          <h3 className="text-xl font-extrabold uppercase tracking-widest text-fh-blue-800">
+            telephone
+          </h3>
           <p className="max-w-sm leading-relaxed">
-            <span className="text-lg font-semibold text-fh-blue-800">
-              If you have any enquiries
-            </span>
-            , you can give us a call during opening hours and we&apos;ll be glad
-            to help!
+            If you have any enquiries, you can give us a call during opening
+            hours and we&apos;ll be glad to help!
           </p>
-          <h2 className="sr-only">Telephone</h2>
+          <h3 className="sr-only">Telephone</h3>
           <div>
             <PhoneIcon size={32} className="mx-auto mb-2 text-fh-blue-500" />
             <a href="tel:01617754738" className="tracking-wide">
@@ -31,15 +31,15 @@ const ContactPage = () => {
             </a>
           </div>
         </div>
-        <div className="grid justify-center gap-6 min-h-64 p-8 shadow-md">
+        <div className="grid justify-center items-center min-h-96 px-8 py-12 shadow-xl sm:shadow-lg">
+          <h3 className="text-xl font-extrabold uppercase tracking-widest text-fh-blue-800">
+            email
+          </h3>
           <p className="max-w-sm leading-relaxed">
-            <span className="text-lg font-semibold text-fh-blue-800">
-              If you&apos;re not in a rush
-            </span>
-            , then send us an email and we&apos;ll get back to you as soon as
-            possible!
+            If you&apos;re not in a rush, then send us an email and we&apos;ll
+            get back to you as soon as possible!
           </p>
-          <h2 className="sr-only">Email</h2>
+          <h3 className="sr-only">Email</h3>
           <div>
             <Mail size={32} className="mx-auto mb-2 text-fh-blue-500" />
             <a
@@ -50,13 +50,13 @@ const ContactPage = () => {
             </a>
           </div>
         </div>
-        <div className="grid justify-center gap-6 min-h-64 p-8 shadow-md">
+        <div className="grid justify-center items-center min-h-96 px-8 py-12 shadow-xl sm:shadow-lg">
+          <h3 className="text-xl font-extrabold uppercase tracking-widest text-fh-blue-800">
+            social media
+          </h3>
           <p className="max-w-sm leading-relaxed">
-            <span className="text-lg font-semibold text-fh-blue-800">
-              To keep up-to-date with changes{" "}
-            </span>{" "}
-            to our opening hours or any announcements, please check our Social
-            Media!
+            To keep up-to-date with changes to our opening hours or any
+            announcements, please check our Social Media!
           </p>
           <div className="flex justify-evenly">
             <Link href={"https://www.instagram.com/ferryhill_fishchips/"}>
