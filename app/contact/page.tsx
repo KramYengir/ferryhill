@@ -15,52 +15,53 @@ const ContactPage = () => {
 
       {/* How to get in touch */}
       <div className="flex flex-wrap lg:flex-nowrap justify-evenly items-start gap-x-6 gap-y-0 text-center bg-neutral-50 text-fh-blue-900">
-        <div className="grid justify-center items-center min-h-96 px-8 py-12 shadow-xl sm:shadow-lg">
-          <h3 className="text-xl font-extrabold uppercase tracking-widest text-fh-blue-800">
+        <div className="grid justify-center items-center min-h-96 px-8 py-12 shadow-lg rounded-md">
+          <h2 className="text-xl font-extrabold uppercase tracking-widest text-fh-blue-600">
             telephone
-          </h3>
+          </h2>
           <p className="max-w-sm leading-relaxed">
             If you have any enquiries, you can give us a call during opening
             hours and we&apos;ll be glad to help!
           </p>
-          <h3 className="sr-only">Telephone</h3>
           <div>
-            <PhoneIcon size={32} className="mx-auto mb-2 text-fh-blue-500" />
-            <a href="tel:01617754738" className="tracking-wide">
+            <PhoneIcon size={32} className="mx-auto mb-2 text-fh-gold-500" />
+            <a
+              href="tel:01617754738"
+              className="text-lg text-fh-blue-900 tracking-wide font-light"
+            >
               0161 775 4738
             </a>
           </div>
         </div>
-        <div className="grid justify-center items-center min-h-96 px-8 py-12 shadow-xl sm:shadow-lg">
-          <h3 className="text-xl font-extrabold uppercase tracking-widest text-fh-blue-800">
+        <div className="grid justify-center items-center min-h-96 px-8 py-12 shadow-lg rounded-md">
+          <h2 className="text-xl font-extrabold uppercase tracking-widest text-fh-blue-600">
             email
-          </h3>
+          </h2>
           <p className="max-w-sm leading-relaxed">
             If you&apos;re not in a rush, then send us an email and we&apos;ll
             get back to you as soon as possible!
           </p>
-          <h3 className="sr-only">Email</h3>
           <div>
-            <Mail size={32} className="mx-auto mb-2 text-fh-blue-500" />
+            <Mail size={32} className="mx-auto mb-2 text-fh-gold-500" />
             <a
               href="email:ferryhillfishandchips@gmail.com"
-              className="tracking-wide"
+              className="text-lg text-fh-blue-900 tracking-wide font-light"
             >
               ferryhillfishandchips@gmail.com
             </a>
           </div>
         </div>
-        <div className="grid justify-center items-center min-h-96 px-8 py-12 shadow-xl sm:shadow-lg">
-          <h3 className="text-xl font-extrabold uppercase tracking-widest text-fh-blue-800">
+        <div className="grid justify-center items-center min-h-96 px-8 py-12 shadow-lg rounded-md">
+          <h2 className="text-xl font-extrabold uppercase tracking-widest text-fh-blue-600">
             social media
-          </h3>
+          </h2>
           <p className="max-w-sm leading-relaxed">
             To keep up-to-date with changes to our opening hours or any
             announcements, please check our Social Media!
           </p>
           <div className="flex justify-evenly">
             <Link href={"https://www.instagram.com/ferryhill_fishchips/"}>
-              <Instagram size={48} className="mx-auto text-fh-blue-500" />
+              <Instagram size={48} className="mx-auto text-fh-gold-500" />
             </Link>
             <Link
               href={
@@ -69,7 +70,7 @@ const ContactPage = () => {
             >
               <FacebookIcon
                 size={48}
-                className="mb-4 mx-auto text-fh-blue-500"
+                className="mb-4 mx-auto text-fh-gold-500"
               />
             </Link>
           </div>
@@ -90,7 +91,7 @@ export default ContactPage;
   /* <div>
   <h2 className="sr-only">Address</h2>
   <MapPin size={32} className="mb-4 mx-auto text-fh-blue-500" />
-  <address className="tracking-wide">
+  <address className="text-lg text-fh-blue-900 tracking-wide font-light">
     <span className="font-semibold">Ferryhill Fish & Chips</span> <br />{" "}
     50 Ferryhill Road,
     <br /> Irlam, Manchester,
