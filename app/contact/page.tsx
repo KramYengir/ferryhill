@@ -14,7 +14,7 @@ const ContactPage = () => {
       </div>
 
       {/* How to get in touch */}
-      <div className="flex flex-wrap lg:flex-nowrap justify-evenly items-start gap-x-6 gap-y-0 text-center bg-neutral-50 text-fh-blue-900">
+      <section className="flex flex-wrap lg:flex-nowrap justify-evenly items-start gap-x-6 gap-y-0 sm:pb-24 text-center bg-neutral-50 text-fh-blue-900">
         <div className="grid justify-center items-center min-h-96 px-8 py-12 shadow-lg rounded-md">
           <h2 className="text-xl font-extrabold uppercase tracking-widest text-fh-blue-600">
             telephone
@@ -75,27 +75,33 @@ const ContactPage = () => {
             </Link>
           </div>
         </div>
-      </div>
+      </section>
+
+      {/* Address */}
+      <section className="bg-gradient-to-b sm:bg-gradient-to-r from-neutral-900 to-neutral-900/80 text-white py-24">
+        <h2 className="uppercase tracking-widest font-semibold text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl text-center pb-6 sm:pb-24">
+          Where to find us
+        </h2>
+        <div className="flex flex-wrap justify-evenly items-start gap-x-6 gap-y-12">
+          <div className="grid justify-center items-center gap-6  pt-6 sm:pt-12">
+            <h3 className="sr-only">Address</h3>
+            <MapPin size={32} className="mx-auto sm:hidden text-fh-blue-500" />
+            <p className="text-lg md:text-xl tracking-wide font-light text-center sm:text-left">
+              <span className="font-semibold">Ferryhill Fish & Chips</span>{" "}
+              <br /> 50 Ferryhill Road,
+              <br /> Irlam, <br />
+              Manchester,
+              <br /> United Kingdom
+              <br /> M44 6DD
+            </p>
+          </div>
+          <div className="w-full sm:w-2/4 min-w-96 h-96  ">
+            <GoogleMapsComponent />
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
 
 export default ContactPage;
-{
-  /* <div className="w-full h-96 md:h-full lg:w-2/3">
-  <GoogleMapsComponent />
-</div> */
-}
-
-{
-  /* <div>
-  <h2 className="sr-only">Address</h2>
-  <MapPin size={32} className="mb-4 mx-auto text-fh-blue-500" />
-  <address className="text-lg text-fh-blue-900 tracking-wide font-light">
-    <span className="font-semibold">Ferryhill Fish & Chips</span> <br />{" "}
-    50 Ferryhill Road,
-    <br /> Irlam, Manchester,
-    <br /> United Kingdom
-    </address>
-    </div> */
-}

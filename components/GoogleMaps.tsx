@@ -25,7 +25,7 @@ const GoogleMapsComponent: React.FC = () => {
   if (!isLoaded) return <div>Loading...</div>;
 
   return (
-    <div className="w-full h-96 lg:h-full">
+    <div className="w-full h-96 lg:h-full overflow-hidden sm:rounded-sm">
       <GoogleMap
         mapContainerStyle={{ width: "100%", height: "100%" }} // Ensures map takes full container size
         center={center}
