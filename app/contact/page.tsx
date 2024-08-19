@@ -3,6 +3,8 @@ import React from "react";
 import GoogleMapsComponent from "@/components/GoogleMaps";
 import Link from "next/link";
 import ContactCard from "@/components/ContactCard";
+import FAQ from "@/components/FAQ";
+import faqItems from "@/data/faqItems";
 
 const ContactPage = () => {
   return (
@@ -72,6 +74,18 @@ const ContactPage = () => {
           </div>
           <div className="w-full sm:w-2/4 min-w-96 h-96">
             <GoogleMapsComponent />
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="bg-gradient-to-b sm:bg-gradient-to-r from-neutral-50 to-neutral-50/90  py-24">
+        <h2 className="uppercase tracking-widest font-semibold text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl text-center pb-6 sm:pb-24">
+          Frequently asked questions
+        </h2>
+        <div className="flex flex-wrap justify-evenly items-start gap-x-6 gap-y-12">
+          <div className="w-full sm:w-2/4 min-w-96 h-96">
+            <FAQ items={faqItems} />
           </div>
         </div>
       </section>
