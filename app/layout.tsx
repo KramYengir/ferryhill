@@ -26,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${rem.className} bg-neutral-50 text-fh-blue-900`}>
+      <body className={`${inter.className} bg-neutral-50 text-fh-blue-900`}>
         <Nav />
         <main className="flex flex-col min-h-screen">{children}</main>
         <Footer />
