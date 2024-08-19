@@ -21,7 +21,7 @@ const ReviewsSection: React.FC = () => {
           <h2 className="text-4xl text-balance text-center text-white my-4 uppercase font-bold tracking-wide">
             What our customers have to say
           </h2>
-          <p className="text-balance text-center text-white italic mb-12">
+          <p className="text-balance text-center text-white font-light mb-12">
             With over 300 reviews on Google, we know what our customers like
           </p>
           <Carousel
