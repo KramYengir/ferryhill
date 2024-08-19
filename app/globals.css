@@ -6,6 +6,22 @@ html {
   scroll-behavior: smooth;
 }
 
+header {
+  transition: background-color 0.3s ease-in-out, padding 0.3s ease-in-out;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  justify-content: center;
+  @apply bg-neutral-900/90 rounded-none;
+  padding: 1rem 2rem;
+  transition: background-color 0.3s ease-in-out, padding 0.3s ease-in-out;
+}
+
 @layer utilities {
   .btn-primary {
     @apply bg-fh-blue-700 text-white font-semibold py-2 px-4 rounded-md hover:bg-opacity-75 hover:outline focus-visible:bg-opacity-75;
