@@ -19,7 +19,7 @@ const ContactCard: React.FC<ContactCardProps> = ({
   isSocialMedia = false,
 }) => {
   return (
-    <div className="grid justify-center items-center min-h-96 px-8 py-12 sm:shadow-lg rounded-md">
+    <div className="grid justify-center items-center min-h-96 px-8 py-12 shadow-sm sm:shadow-lg rounded-md">
       <h2 className="text-xl font-extrabold uppercase tracking-widest text-fh-blue-600">
         {title}
       </h2>
