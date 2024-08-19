@@ -24,11 +24,11 @@ const AboutSection = ({
   switch (color) {
     case "stone":
       bgClass =
-        "bg-gradient-to-b sm:bg-gradient-to-r from-stone-900 to-stone-700/85  backdrop-blur-sm py-24";
+        "bg-gradient-to-b sm:bg-gradient-to-r to-stone-900 from-stone-700/95 backdrop-blur-sm py-24";
       break;
     case "blue":
       bgClass =
-        "bg-gradient-to-b sm:bg-gradient-to-r from-fh-blue-900 to-fh-blue-700/85 backdrop-blur-sm py-24";
+        "bg-gradient-to-b sm:bg-gradient-to-r from-fh-blue-900 to-fh-blue-700/90 backdrop-blur-sm py-24";
       break;
     case "white":
     default:
@@ -57,7 +57,7 @@ const AboutSection = ({
           </h2>
           <p className={`text-left text-lg max-w-sm ` + textColor}>{text}</p>
         </div>
-        <div className="flex rounded-sm overflow-hidden w-full sm:max-w-md">
+        <div className="flex rounded-sm  w-full sm:max-w-md">
           <Image src={image} alt={imageAlt} layout="responsive" />
         </div>
       </div>
