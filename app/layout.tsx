@@ -12,15 +12,17 @@ const merriweather = Merriweather({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://ferryhill.netlify.app"),
-  title: "Home | Ferryhill Fish & Chips | Irlam",
-  description: "Enjoy the best Fish & Chips in Manchester!",
+  title: "Home | Ferryhill Fish & Chips",
+  description:
+    "Enjoy the best Fish & Chips in Manchester at Ferryhill Fish & Chips!",
   openGraph: {
     type: "website",
     locale: "en_EN",
     url: "https://ferryhill.netlify.app",
     siteName: "Ferryhill Fish & Chips",
     title: "Home | Ferryhill Fish & Chips",
-    description: "Enjoy the best Fish & Chips in Manchester!",
+    description:
+      "Enjoy the best Fish & Chips in Manchester at Ferryhill Fish & Chips!",
     images: [
       {
         url: "https://ferryhill.netlify.app/og/og_home.png",
