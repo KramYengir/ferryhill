@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import heroImg from "../assets/images/hero-img.png";
+import heroImg from "../assets/images/hero_img.svg";
 import { ChevronDown } from "lucide-react";
 
 const Hero = () => {
