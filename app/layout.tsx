@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Merriweather, REM } from "next/font/google";
+import { Inter, Merriweather } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
@@ -7,10 +7,6 @@ import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 const merriweather = Merriweather({
   weight: ["300", "400", "700"],
-  subsets: ["latin"],
-});
-
-const rem = REM({
   subsets: ["latin"],
 });
 
