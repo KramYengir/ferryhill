@@ -21,9 +21,8 @@ export const metadata: Metadata = {
     "Manchester",
     "Ferryhill Fish & Chips",
   ],
-  author: "Ferryhill Fish & Chips",
+  authors: [{ name: "Ferryhill Fish & Chips" }],
   robots: "index, follow",
-  canonical: "https://ferryhill.netlify.app/",
   openGraph: {
     title: "Ferryhill Fish & Chips | Irlam | Manchester",
     description:
