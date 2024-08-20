@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     description: "Enjoy the best Fish & Chips in Manchester!",
     images: [
       {
-        url: "https://ferryhill.netlify.app/og/og-image.png",
+        url: "https://ferryhill.netlify.app/og/og_home.png",
         width: 1200,
         height: 630,
         alt: "ferryhill fish and chips logo",
