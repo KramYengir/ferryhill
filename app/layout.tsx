@@ -54,7 +54,7 @@ export const metadata: Metadata = {
   },
   viewport: "width=device-width, initial-scale=1",
   themeColor: "#ffffff",
-  icon: "/favicon.ico",
+  icons: "/favicon.ico",
   manifest: "/site.webmanifest",
   applicationName: "Ferryhill Fish & Chips",
 };
