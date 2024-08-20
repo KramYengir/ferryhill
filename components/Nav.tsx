@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
-import logo from "../public/logo.png";
+import logo from "../public/logo.svg";
 
 const navLinks = [
   { name: "Home", path: "/" },
