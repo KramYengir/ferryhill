@@ -14,6 +14,50 @@ export const metadata: Metadata = {
   title: "Ferryhill Fish & Chips | Irlam | Manchester",
   description:
     "Enjoy the best fish and chips in Manchester at Ferryhill Fish & Chips.",
+  keywords: [
+    "fish and chips",
+    "takeaway",
+    "Irlam",
+    "Manchester",
+    "Ferryhill Fish & Chips",
+  ],
+  author: "Ferryhill Fish & Chips",
+  robots: "index, follow",
+  canonical: "https://ferryhill.netlify.app/",
+  openGraph: {
+    title: "Ferryhill Fish & Chips | Irlam | Manchester",
+    description:
+      "Enjoy the best fish and chips in Manchester at Ferryhill Fish & Chips.",
+    url: "https://ferryhill.netlify.app/",
+    type: "website",
+    images: [
+      {
+        url: "https://www.yoursite.com/og/og_home.png",
+        width: 1200,
+        height: 630,
+        alt: "Ferryhill Fish & Chips",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "https://ferryhill.netlify.app/",
+    title: "Ferryhill Fish & Chips | Irlam | Manchester",
+    description: "Best fish and chips in Manchester.",
+    images: [
+      {
+        url: "https://www.yoursite.com/og/og_home.png",
+        width: 1200,
+        height: 630,
+        alt: "Ferryhill Fish & Chips",
+      },
+    ],
+  },
+  viewport: "width=device-width, initial-scale=1",
+  themeColor: "#ffffff",
+  icon: "/favicon.ico",
+  manifest: "/site.webmanifest",
+  applicationName: "Ferryhill Fish & Chips",
 };
 
 export default function RootLayout({
