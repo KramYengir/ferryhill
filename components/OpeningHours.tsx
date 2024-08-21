@@ -17,14 +17,23 @@ const OpeningHours = () => {
       </div>
       <h3 className="text-xl uppercase font-semibold mt-4">Mon - Sat</h3>
       <Separator decorative className="opacity-40 mb-1" />
-      <p>11:30am - 1:45pm</p>
-      <p>4:30pm - 8:30pm</p>
+      <p>
+        <time dateTime="11:30:00">11:30 AM</time> -
+        <time dateTime="13:45:00"> 1:45 PM</time>
+      </p>
+      <p>
+        <time dateTime="16:30:00">4:30 PM</time> -
+        <time dateTime="20:30:00"> 8:30 PM</time>
+      </p>
       <h3 className="text-xl uppercase font-semibold mt-6">Fri</h3>
       <Separator decorative className="opacity-40 mb-1" />
       <small className="font-light italic mb-1">
         Opened longer in the mornings
       </small>
-      <p>11:30am - 2:00pm</p>
+      <p>
+        <time dateTime="11:30:00">11:30 AM</time> -
+        <time dateTime="14:00:00"> 2:00 PM</time>
+      </p>
       {/* <p>4:30pm - 8:30pm</p> */}
       <h3 className="text-xl uppercase font-semibold mt-6">Sun</h3>
       <Separator decorative className="opacity-40 mb-1" />
