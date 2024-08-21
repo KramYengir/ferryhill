@@ -31,7 +31,7 @@ export const metadata: Metadata = {
 const AboutPage = () => {
   return (
     <div
-      className="grid w-full bg-[url('../assets/images/FH_fish_meal.jpeg')] bg-cover bg-center bg-no-repeat bg-fixed"
+      className="grid w-full bg-[url('../assets/images/FH_fish_meal.webp')] bg-cover bg-center bg-no-repeat bg-fixed"
       aria-labelledby="about-page-heading"
     >
       <div className="bg-neutral-50">

@@ -1,17 +1,17 @@
 import React from "react";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import Image from "next/image";
-import nfffIMG from "../assets/images/NFFF_LOGO.png";
+import nfffIMG from "../assets/images/NFFF_LOGO.webp";
 import foodHygieneIMG from "../assets/images/FH_food_hygiene.jpeg";
 import ecoIMG from "../assets/images/FH_eco.png";
 
 const AccreditationSection = () => {
   return (
     <section
-      className="bg-[url('../assets/images/FH_fish_heater.jpeg')] bg-cover bg-center bg-fixed bg-no-repeat"
+      className="bg-[url('../assets/images/FH_fish_heater.webp')] bg-cover bg-center bg-fixed bg-no-repeat"
       aria-labelledby="accreditation-section-heading"
     >
-      <div className="bg-gradient-to-b sm:bg-gradient-to-b from-neutral-950 to-neutral-700/80 backdrop-blur-sm">
+      <div className="bg-gradient-to-b sm:bg-gradient-to-r from-neutral-950 to-neutral-700/80 backdrop-blur-sm">
         <h2 id="accreditation-section-heading" className="sr-only">
           Our Accreditations
         </h2>

@@ -14,7 +14,7 @@ const ReviewsSection: React.FC = () => {
   return (
     <section
       id="reviews"
-      className="bg-[url('../assets/images/FH_fish_meal.jpeg')] bg-cover bg-center bg-fixed bg-no-repeat"
+      className="bg-[url('../assets/images/FH_fish_meal.webp')] bg-cover bg-center bg-fixed bg-no-repeat"
       aria-labelledby="reviews-section-heading"
     >
       <div className=" bg-gradient-to-b sm:bg-gradient-to-br from-fh-blue-900 to-fh-blue-700/80 bg-opacity-85">

@@ -34,7 +34,7 @@ export const metadata: Metadata = {
 
 const ContactPage = () => {
   return (
-    <div className="grid w-full bg-[url('../assets/images/FH_fish_meal.jpeg')] bg-cover bg-center bg-no-repeat bg-fixed">
+    <div className="grid w-full bg-[url('../assets/images/FH_fish_meal.webp')] bg-cover bg-center bg-no-repeat bg-fixed">
       {/* Title */}
       <div className="bg-neutral-50">
         <h1
