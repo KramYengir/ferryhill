@@ -8,7 +8,10 @@ interface ReviewCardProps {
 
 const ReviewCard: React.FC<ReviewCardProps> = ({ text, author }) => {
   return (
-    <Card className="flex flex-col justify-center p-6 leading-6 bg-fh-blue-950 bg-opacity-45 text-white border-none">
+    <Card
+      role="article"
+      className="flex flex-col justify-center p-6 leading-6 bg-fh-blue-950 bg-opacity-45 text-white border-none"
+    >
       <CardContent>
         <p className="italic max-w-sm">{text}</p>
       </CardContent>

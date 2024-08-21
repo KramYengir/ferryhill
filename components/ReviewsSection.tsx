@@ -15,10 +15,14 @@ const ReviewsSection: React.FC = () => {
     <section
       id="reviews"
       className="bg-[url('../assets/images/FH_fish_meal.jpeg')] bg-cover bg-center bg-fixed bg-no-repeat"
+      aria-labelledby="reviews-section-heading"
     >
       <div className="bg-fh-blue-700 bg-opacity-85">
         <div className="flex flex-col justify-center items-center max-w-screen-xl 2xl:max-w-screen-2xl py-20 px-12 mx-auto">
-          <h2 className="text-4xl text-balance text-center text-white my-4 uppercase font-bold tracking-wide">
+          <h2
+            id="reviews-section-heading"
+            className="text-4xl text-balance text-center text-white my-4 uppercase font-bold tracking-wide"
+          >
             What our customers have to say
           </h2>
           <p className="text-balance text-center text-white font-light mb-12">
@@ -36,14 +40,25 @@ const ReviewsSection: React.FC = () => {
                 <CarouselItem
                   key={index}
                   className="flex justify-center md:basis-1/2 xl:basis-1/3"
+                  role="group"
+                  aria-roledescription="slide"
                 >
                   <ReviewCard text={review.text} author={review.author} />
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious className="cursor-pointer m-2" />
-            <CarouselNext className="cursor-pointer m-2" />
-            <CarouselDots className="mt-6" />
+            <CarouselPrevious
+              className="cursor-pointer m-2"
+              aria-label="Previous review"
+            />
+            <CarouselNext
+              className="cursor-pointer m-2"
+              aria-label="Next review"
+            />
+            <CarouselDots
+              className="mt-6"
+              aria-label="Carousel navigation dots"
+            />
           </Carousel>
         </div>
       </div>

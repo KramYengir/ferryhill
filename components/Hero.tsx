@@ -12,22 +12,34 @@ const Hero = () => {
     >
       <div className="flex flex-col  items-center text-center py-24 ">
         <div className=" w-[80vw]  sm:max-w-sm">
-          <Image src={heroImg} alt="welcome message for ferryhill" />
-          <h1 className="sr-only">Welcome to our Ferryhill Fish and Chips</h1>
-          <p className="sr-only">
-            Traditional fish and chips in the heart of irlam, manchester
-          </p>
+          <h1>
+            <Image
+              src={heroImg}
+              alt="Welcome to Ferryhill Fish and Chips in Irlam, Manchester"
+            />
+            <span className="sr-only">
+              Welcome to Ferryhill Fish and Chips in Irlam, Manchester
+            </span>
+          </h1>
         </div>
         <div className="flex gap-6 mt-12 mb-24">
-          <Link href={"/menu"} className=" btn-primary">
+          <Link
+            href="/menu"
+            className="btn-primary"
+            aria-label="View our Ferryhill Fish and Chips Menu"
+          >
             Our Menu
           </Link>
-          <Link href={"/about"} className=" btn-secondary">
-            About Us
+          <Link
+            href="/about"
+            className="btn-secondary"
+            aria-label="View our story at Ferryhill Fish and Chips"
+          >
+            Our Story
           </Link>
         </div>
         <Link
-          href="#nutshell"
+          href="#who_we_are"
           className="text-white hover:text-fh-gold-500"
           aria-label="Scroll down to the section below"
         >
