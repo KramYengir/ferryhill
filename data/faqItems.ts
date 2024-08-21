@@ -1,23 +1,23 @@
 const faqItems = [
   {
-    question: "Do you deliver?",
+    question: "Do you offer delivery?",
     answer:
-      "No, we do not deliver. But you can call us to place an order for collection.",
+      "No, we do not offer delivery. However, you can call us to place an order for collection.",
   },
   {
-    question: "Do you have indoor seating?",
+    question: "Is there indoor seating available?",
     answer:
-      "No, we do not have indoor seating. But we do provide outdoor seating when the weather is suitable",
+      "No, we do not have indoor seating. We do offer outdoor seating when the weather permits.",
   },
   {
-    question: "Do you do specials?",
+    question: "Do you have any specials?",
     answer:
-      "Yes, we do offer specials on a regular basis, which you can find on our menu page. We occasionally have a daily specials instore, which we will inform you about on our social media.",
+      "Yes, we regularly offer specials, which you can find on our menu page. We also have daily specials in-store from time to time, and we will announce these on our social media.",
   },
   {
-    question: "Do you open on Bank Holidays?",
+    question: "Are you open on Bank Holidays?",
     answer:
-      "No, we are closed on Bank Holidays. Exceptions are made for Christmas and Boxing Day, but be sure to check our social media for any updates.",
+      "Yes, we are generally open on Bank Holidays. However, there may be exceptions, so please check our social media for any updates.",
   },
 ];
 
