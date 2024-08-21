@@ -12,22 +12,33 @@ interface MenuItemProps {
 
 const MenuItem: React.FC<MenuItemProps> = ({ item }) => {
   return (
-    <div className="bg-white p-4 mb-4 rounded shadow">
+    <div
+      className="bg-white p-4 mb-4 rounded shadow"
+      aria-labelledby={`menu-item-${item.id}`}
+    >
       <div className="flex justify-between items-center">
-        <h3 className="text-lg font-semibold">{item.name}</h3>
-        {item.price !== undefined && <span>{`£${item.price.toFixed(2)}`}</span>}
+        <h3 id={`menu-item-${item.id}`} className="text-lg font-semibold">
+          {item.name}
+        </h3>
+        {item.price !== undefined && (
+          <span className="font-medium">{`£${item.price.toFixed(2)}`}</span>
+        )}
       </div>
       {item.sizes && (
-        <ul className="mt-2">
+        <ul className="mt-2 list-disc list-inside">
           {item.sizes.map((size, index) => (
             <li key={index} className="flex justify-between">
-              <span>{size.size}</span>
-              <span>{`£${size.price.toFixed(2)}`}</span>
+              <span className="text-sm">{size.size}</span>
+              <span className="font-medium">{`£${size.price.toFixed(2)}`}</span>
             </li>
           ))}
         </ul>
       )}
-      {item.info && <p className="mt-2 text-sm">{item.info}</p>}
+      {item.info && (
+        <p className="mt-2 text-sm" aria-describedby={`info-${item.id}`}>
+          {item.info}
+        </p>
+      )}
     </div>
   );
 };
