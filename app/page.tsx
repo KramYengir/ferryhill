@@ -16,7 +16,7 @@ export default function HomePage() {
 
       {/* Opening Hours Section */}
       <section
-        className="bg-[url('../assets/images/tiled_bg.webp')] bg-cover bg-center bg-fixed bg-no-repeat"
+        className="bg-[url('../assets/images/tiled_bg.webp')] bg-cover bg-center bg-no-repeat"
         aria-labelledby="opening-hours-section-heading"
       >
         <div className="pt-20">
