@@ -27,7 +27,7 @@ const OpeningHours = () => {
       </p>
       <h3 className="text-xl uppercase font-semibold mt-6">Fri</h3>
       <Separator decorative className="opacity-40 mb-1" />
-      <small className="font-light italic mb-1">
+      <small className="text-center font-light italic mb-1">
         Opened longer in the mornings
       </small>
       <p>

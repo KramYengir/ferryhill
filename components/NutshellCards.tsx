@@ -4,7 +4,7 @@ import NutshellCard from "./NutshellCard";
 
 const NutshellNutshellCards = () => {
   return (
-    <section id="who_we_are" className="bg-neutral-50">
+    <section id="who_we_are" className="bg-neutral-50 pt-12">
       <h2 className="text-4xl lg:text-5xl text-center text-fh-blue-800 mt-16 capitalize font-bold tracking-wide">
         Who Are We?
       </h2>
