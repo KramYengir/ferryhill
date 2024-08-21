@@ -73,14 +73,14 @@ const ContactPage = () => {
             <>
               <Link
                 href="https://www.instagram.com/ferryhill_fishchips/"
-                aria-label="Instagram"
+                aria-label="Visit our Instagram page"
                 className="mx-2"
               >
                 <Instagram size={48} className="text-fh-gold-500" />
               </Link>
               <Link
                 href="https://www.facebook.com/FerryhillFishChips/?ref=embed_page"
-                aria-label="Facebook"
+                aria-label="Visit our Facebook page"
                 className="mx-2"
               >
                 <FacebookIcon size={48} className="text-fh-gold-500" />
