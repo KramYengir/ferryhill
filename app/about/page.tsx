@@ -1,6 +1,32 @@
 import React from "react";
 import AboutSection from "@/components/AboutSection";
 import { aboutInfo } from "../../data/aboutInfo";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://ferryhill.netlify.app"),
+  title: "About Us | Ferryhill Fish & Chips",
+  description:
+    "Enjoy the best Fish & Chips in Manchester at Ferryhill Fish & Chips!",
+  robots: "index, follow",
+  openGraph: {
+    type: "website",
+    locale: "en_EN",
+    url: "https://ferryhill.netlify.app/about",
+    siteName: "Ferryhill Fish & Chips",
+    title: "About Us | Ferryhill Fish & Chips",
+    description:
+      "Enjoy the best Fish & Chips in Manchester at Ferryhill Fish & Chips!",
+    images: [
+      {
+        url: "https://ferryhill.netlify.app/og/og_home.png",
+        width: 1200,
+        height: 630,
+        alt: "ferryhill fish and chips logo",
+      },
+    ],
+  },
+};
 
 const AboutPage = () => {
   return (

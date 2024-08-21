@@ -5,6 +5,32 @@ import Link from "next/link";
 import ContactCard from "@/components/ContactCard";
 import FAQ from "@/components/FAQ";
 import faqItems from "@/data/faqItems";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://ferryhill.netlify.app"),
+  title: "Contact Us | Ferryhill Fish & Chips",
+  description:
+    "Enjoy the best Fish & Chips in Manchester at Ferryhill Fish & Chips!",
+  robots: "index, follow",
+  openGraph: {
+    type: "website",
+    locale: "en_EN",
+    url: "https://ferryhill.netlify.app/contact",
+    siteName: "Ferryhill Fish & Chips",
+    title: "Contact Us | Ferryhill Fish & Chips",
+    description:
+      "Enjoy the best Fish & Chips in Manchester at Ferryhill Fish & Chips!",
+    images: [
+      {
+        url: "https://ferryhill.netlify.app/og/og_home.png",
+        width: 1200,
+        height: 630,
+        alt: "ferryhill fish and chips logo",
+      },
+    ],
+  },
+};
 
 const ContactPage = () => {
   return (
