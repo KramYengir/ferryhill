@@ -5,10 +5,12 @@ import NutshellCard from "./NutshellCard";
 const NutshellNutshellCards = () => {
   return (
     <section id="who_we_are" className="bg-neutral-50">
-      <h2 className="text-4xl text-center text-fh-blue-800 mt-16 capitalize font-bold tracking-wide">
+      <h2 className="text-4xl lg:text-5xl text-center text-fh-blue-800 mt-16 capitalize font-bold tracking-wide">
         Who Are We?
       </h2>
-      <p className="text-center text-xl font-light">In a nutshell</p>
+      <p className="text-center text-xl font-light tracking-wide">
+        In a nutshell
+      </p>
       <div className="flex flex-wrap justify-evenly gap-y-16 max-w-screen-2xl mx-auto py-32">
         <NutshellCard
           icon={Award}

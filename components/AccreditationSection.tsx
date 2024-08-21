@@ -11,7 +11,7 @@ const AccreditationSection = () => {
       className="bg-[url('../assets/images/FH_fish_heater.jpeg')] bg-cover bg-center bg-fixed bg-no-repeat"
       aria-labelledby="accreditation-section-heading"
     >
-      <div className="bg-neutral-950 bg-opacity-70 backdrop-blur-sm">
+      <div className="bg-gradient-to-b sm:bg-gradient-to-b from-neutral-950 to-neutral-700/80 backdrop-blur-sm">
         <h2 id="accreditation-section-heading" className="sr-only">
           Our Accreditations
         </h2>
