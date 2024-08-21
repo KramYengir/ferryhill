@@ -5,24 +5,24 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://ferryhill.netlify.app"),
-  title: "Our Menu | Ferryhill Fish & Chips",
+  title: "Explore Our Menu | Ferryhill Fish & Chips",
   description:
-    "Enjoy the best Fish & Chips in Manchester at Ferryhill Fish & Chips!",
+    "Discover our delicious menu at Ferryhill Fish & Chips. From classic fish & chips to tasty specials, find your favorite today!",
   robots: "index, follow",
   openGraph: {
     type: "website",
     locale: "en_EN",
     url: "https://ferryhill.netlify.app/menu",
     siteName: "Ferryhill Fish & Chips",
-    title: "Our Menu | Ferryhill Fish & Chips",
+    title: "Explore Our Menu | Ferryhill Fish & Chips",
     description:
-      "Enjoy the best Fish & Chips in Manchester at Ferryhill Fish & Chips!",
+      "Discover our delicious menu at Ferryhill Fish & Chips. From classic fish & chips to tasty specials, find your favorite today!",
     images: [
       {
         url: "https://ferryhill.netlify.app/og/og_home.png",
         width: 1200,
         height: 630,
-        alt: "ferryhill fish and chips logo",
+        alt: "Ferryhill Fish & Chips menu",
       },
     ],
   },

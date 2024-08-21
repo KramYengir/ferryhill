@@ -9,24 +9,24 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://ferryhill.netlify.app"),
-  title: "Contact Us | Ferryhill Fish & Chips",
+  title: "Get in Touch | Ferryhill Fish & Chips",
   description:
-    "Get in touch with Ferryhill Fish & Chips for any enquiries or follow us on social media!",
+    "Have questions or need to get in touch? Contact Ferryhill Fish & Chips via phone, email, or social media. We're here to help!",
   robots: "index, follow",
   openGraph: {
     type: "website",
     locale: "en_EN",
     url: "https://ferryhill.netlify.app/contact",
     siteName: "Ferryhill Fish & Chips",
-    title: "Contact Us | Ferryhill Fish & Chips",
+    title: "Get in Touch | Ferryhill Fish & Chips",
     description:
-      "Get in touch with Ferryhill Fish & Chips for any enquiries or follow us on social media!",
+      "Have questions or need to get in touch? Contact Ferryhill Fish & Chips via phone, email, or social media. We're here to help!",
     images: [
       {
         url: "https://ferryhill.netlify.app/og/og_home.png",
         width: 1200,
         height: 630,
-        alt: "Contact Ferryhill Fish and Chips",
+        alt: "Contact Ferryhill Fish & Chips",
       },
     ],
   },
