@@ -33,6 +33,7 @@ const ContactCard: React.FC<ContactCardProps> = ({
           <a
             href={link}
             className="text-lg text-fh-blue-900 tracking-wide font-light"
+            aria-label={`Contact via ${title}`}
           >
             {icon}
             {linkText && !isSocialMedia && <span>{linkText}</span>}

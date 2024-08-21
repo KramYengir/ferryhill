@@ -25,6 +25,9 @@ const FAQ: React.FC<FAQProps> = ({ items }) => {
           <div
             className="flex items-center justify-between p-4 cursor-pointer bg-gray-50 hover:bg-gray-200"
             onClick={() => handleToggle(index)}
+            aria-expanded={openIndex === index}
+            aria-controls={`answer-${index}`}
+            id={`question-${index}`}
           >
             <h2 className="text-lg font-semibold">{item.question}</h2>
             <span className="text-xl font-semibold">
@@ -32,7 +35,11 @@ const FAQ: React.FC<FAQProps> = ({ items }) => {
             </span>
           </div>
           {openIndex === index && (
-            <div className="p-4 bg-neutral-50">
+            <div
+              className="p-4 bg-neutral-50"
+              id={`answer-${index}`}
+              aria-labelledby={`question-${index}`}
+            >
               <p>{item.answer}</p>
             </div>
           )}
