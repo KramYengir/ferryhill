@@ -11,6 +11,7 @@ const Footer = () => {
         <Link
           href={"https://www.rigneymade.com/"}
           target="_blank"
+          rel="noopener"
           className="flex items-center justify-center"
         >
           <div className="flex justify-center mr-2">
