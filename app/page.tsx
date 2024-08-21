@@ -22,20 +22,20 @@ export default function HomePage() {
         <div className="pt-20">
           <h2
             id="opening-hours-section-heading"
-            className="text-balance text-fh-blue-700 text-4xl uppercase font-bold tracking-wide text-center"
+            className="text-balance text-fh-blue-700 text-4xl sm:text-5xl uppercase font-bold tracking-wider text-center"
           >
             Opening Hours
           </h2>
           <div className="flex flex-row-reverse flex-wrap gap-8 items-center justify-evenly max-w-screen-xl text-left py-20 px-12 mx-auto">
             <OpeningHours />
             <article
-              className="max-w-sm flex flex-col gap-6 justify-center text-center py-16 bg-fh-blue-600 rounded-md p-8"
+              className="max-w-sm flex flex-col gap-6 justify-center text-center py-16 bg-fh-blue-800 rounded-md p-8"
               aria-labelledby="contact-info-heading"
             >
               <h3 id="contact-info-heading" className="sr-only">
                 Contact Information
               </h3>
-              <p className="text-white font-bold text-lg max-w-prose">
+              <p className="text-white font-semibold text-xl tracking-wide max-w-prose">
                 Be sure to check our social media pages or get in touch with us
                 for any up-to-date changes.
               </p>
