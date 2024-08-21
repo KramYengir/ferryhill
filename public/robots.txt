@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.ferryhill.netlify.app
+
+# Sitemaps
+Sitemap: https://www.ferryhill.netlify.app/sitemap.xml

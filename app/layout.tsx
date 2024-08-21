@@ -15,6 +15,7 @@ export const metadata: Metadata = {
   title: "Home | Ferryhill Fish & Chips",
   description:
     "Enjoy the best Fish & Chips in Manchester at Ferryhill Fish & Chips!",
+  robots: "index, follow",
   openGraph: {
     type: "website",
     locale: "en_EN",
