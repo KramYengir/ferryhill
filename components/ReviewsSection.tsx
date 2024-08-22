@@ -61,6 +61,9 @@ const ReviewsSection: React.FC = () => {
             />
           </Carousel>
         </div>
+        <small className="text-white font-extralight p-2 ">
+          Source: Google Reviews
+        </small>
       </div>
     </section>
   );
