@@ -23,7 +23,7 @@ const NutshellNutshellCards = () => {
         <NutshellCard
           icon={Fish}
           heading="Sustainable Sourcing"
-          text="Our fish is sourced from sustainable fishing grounds, delivered fresh every day, and cooked to perfection in 100% uncontaminated vegetable oil, filtered every day"
+          text="Our fish is sourced from sustainable fishing grounds, delivered fresh every day, cooked to perfection in 100% uncontaminated vegetable oil, filtered every day"
           link="/menu"
           linkText="Explore Our Menu"
           ariaLabel="Explore our menu to see our fresh, sustainably-sourced fish and other offerings"
@@ -39,9 +39,9 @@ const NutshellNutshellCards = () => {
         <NutshellCard
           icon={Vegan}
           heading="Dietary Options"
-          text="With gluten-free options every Monday & Tuesday, and vegan & vegetarian options every day, we are proud to offer a wide range of choices to suit all dietary requirements"
+          text="With Gluten-Free options every Monday & Tuesday, and Vegan & Vegetarian options every day, we are proud to offer a wide range of choices to suit all dietary requirements"
           link="/contact"
-          linkText="Contact Us"
+          linkText="Get In Touch"
           ariaLabel="Contact us for more information about our gluten-free, vegan, and vegetarian options"
         />
       </div>
