@@ -1,6 +1,7 @@
 import paintingIMG from "@/assets/images/painting_square_400.webp";
 import christosIMG from "@/assets/images/FH_christos.webp";
 import mealImg from "@/assets/images/FH_fish_meal.webp";
+import foodCollageImg from "@/assets/images/food_collage.webp";
 import communityImg from "@/assets/images/FH_christos_pitchside.webp";
 import { StaticImageData } from "next/image";
 
@@ -34,9 +35,9 @@ export const aboutInfo: AboutInfoItem[] = [
   {
     heading: "our food...",
     text: "Our ever-expanding menu continues to add a diverse selection of vegan, vegetarian, and gluten-free options, catering to a wide range of dietary preferences. Crafted with care and the finest ingredients, our dishes maintain the high standards our customers have come to expect.",
-    image: mealImg,
+    image: foodCollageImg,
     imageAlt: "fish and chips on some white paper",
-    color: "stone",
+    color: "blue",
     reversed: false,
   },
   {
