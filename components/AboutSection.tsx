@@ -62,7 +62,7 @@ const AboutSection = ({
           <p className={`text-left text-lg max-w-sm ` + textColor}>{text}</p>
         </div>
         <div className="flex rounded-sm w-full sm:max-w-md">
-          <Image src={image} alt={imageAlt} layout="responsive" />
+          <Image src={image} alt={imageAlt} />
         </div>
       </div>
     </section>
