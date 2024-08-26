@@ -56,7 +56,7 @@ export const menuItems = [
       {
         id: 9,
         name: "Breaded Scampi",
-        info: "Portion of 8",
+        info: "Portion of 10",
         price: 4.5,
       },
       {
@@ -112,6 +112,7 @@ export const menuItems = [
   },
   {
     name: "Original Holland Pies",
+    info: "Made In The Northwest Since 1851",
     items: [
       {
         id: 16,
@@ -306,30 +307,27 @@ export const menuItems = [
   },
   {
     name: "Kids Menu",
+    info: "Includes Chips, Drink, Ketchup And Toy",
     items: [
       {
         id: 47,
         name: "Chicken Nuggets",
         price: 4.0,
-        info: "Includes Chips, Drink, Ketchup And Toy",
       },
       {
         id: 48,
         name: "Breaded Fishcake",
         price: 4.0,
-        info: "Includes Chips, Drink, Ketchup And Toy",
       },
       {
         id: 49,
         name: "Fish Bites",
         price: 4.0,
-        info: "Includes Chips, Drink, Ketchup And Toy",
       },
       {
         id: 50,
         name: "Sausage",
         price: 4.0,
-        info: "Includes Chips, Drink, Ketchup And Toy",
       },
     ],
   },
@@ -399,7 +397,7 @@ export const menuItems = [
         id: 60,
         name: "Nuggets",
         price: 4.0,
-        info: "Or 55p Each",
+        info: "A Portion Of 8 Or 55p Each",
       },
       {
         id: 61,
