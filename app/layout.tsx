@@ -66,7 +66,9 @@ export default function RootLayout({
       </head>
       <body className={`${inter.className} bg-neutral-50 text-fh-blue-900`}>
         <Nav />
-        <main className="flex flex-col min-h-screen">{children}</main>
+        <main className="flex flex-col min-h-screen bg-neutral-900">
+          {children}
+        </main>
         <Footer />
       </body>
     </html>

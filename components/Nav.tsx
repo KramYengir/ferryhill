@@ -16,10 +16,10 @@ const Navbar = () => {
   const pathName = usePathname();
 
   useEffect(() => {
-    const hero = document.querySelector("#hero") as HTMLElement | null;
+    const main = document.querySelector("main") as HTMLElement | null;
     const navbar = document.querySelector("#NavBar") as HTMLElement | null;
 
-    if (!hero || !navbar) return;
+    if (!main || !navbar) return;
 
     const top = navbar.offsetTop;
     const navbarHeight = navbar.offsetHeight;
@@ -27,10 +27,10 @@ const Navbar = () => {
     const stickynavbar = () => {
       if (window.scrollY >= top) {
         navbar.classList.add("sticky");
-        hero.style.paddingTop = `${navbarHeight}px`; // Add padding to avoid jump
+        main.style.paddingTop = `${navbarHeight}px`; // Add padding to avoid jump
       } else {
         navbar.classList.remove("sticky");
-        hero.style.paddingTop = "0px"; // Remove padding when not sticky
+        main.style.paddingTop = "0px"; // Remove padding when not sticky
       }
     };
 
