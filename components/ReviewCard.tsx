@@ -10,7 +10,7 @@ const ReviewCard: React.FC<ReviewCardProps> = ({ text, author }) => {
   return (
     <Card
       role="article"
-      className="flex flex-col justify-center p-6 leading-6 bg-fh-blue-950 bg-opacity-45 text-white border-none"
+      className="flex flex-col justify-evenly p-6 leading-6 bg-fh-blue-950 bg-opacity-45 text-white border-none"
     >
       <CardContent>
         <p className="italic max-w-sm">{text}</p>

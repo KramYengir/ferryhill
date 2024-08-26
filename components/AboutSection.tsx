@@ -42,7 +42,7 @@ const AboutSection = ({
     <section className={bgClass}>
       <div
         className={
-          `flex flex-wrap justify-evenly gap-4 max-w-screen-xl px-6 mx-auto ` +
+          `flex flex-wrap justify-evenly gap-12 max-w-screen-xl px-6 mx-auto ` +
           (reversed ? `flex-row-reverse` : "")
         }
         aria-labelledby={`section-heading-${heading
@@ -53,7 +53,7 @@ const AboutSection = ({
           <h2
             id={`section-heading-${heading.replace(/\s+/g, "-").toLowerCase()}`}
             className={
-              `text-left capitalize text-2xl tracking-wider font-bold mb-4 ` +
+              `text-left capitalize text-4xl tracking-widest font-bold mb-4 ` +
               headingColor
             }
           >
@@ -61,7 +61,7 @@ const AboutSection = ({
           </h2>
           <p className={`text-left text-lg max-w-sm ` + textColor}>{text}</p>
         </div>
-        <div className="flex rounded-sm w-full sm:max-w-md">
+        <div className="flex rounded-lg overflow-hidden w-full sm:max-w-md">
           <Image src={image} alt={imageAlt} />
         </div>
       </div>

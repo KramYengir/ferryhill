@@ -6,7 +6,7 @@ import { ChevronsUp, ChevronUpCircle } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-neutral-800 text-white">
+    <footer className="bg-neutral-800 text-white py-2">
       <div className=" relative flex items-center justify-center max-w-screen-xl mx-auto p-2">
         <Link
           href={"https://www.rigneymade.com/"}
@@ -30,7 +30,7 @@ const Footer = () => {
           className="absolute bottom-1/4 right-4 flex items-center gap-2 text-white text-sm hover:text-fh-blue-500"
           aria-label="Back to the top of the page"
         >
-          <ChevronUpCircle size={16} className="sm:hidden" />
+          <ChevronUpCircle size={24} className="sm:hidden" />
           <ChevronsUp size={16} className="hidden sm:block" />
           <span className="hidden sm:block">Back-To-Top</span>
           <ChevronsUp size={16} className="hidden sm:block" />

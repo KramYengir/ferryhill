@@ -128,7 +128,7 @@ const ContactPage = () => {
       >
         <h2
           id="faq-section"
-          className="uppercase tracking-widest font-semibold text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl text-center pb-6 sm:pb-24"
+          className="uppercase tracking-widest font-semibold text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl text-center pb-16 sm:pb-24"
         >
           Frequently Asked Questions
         </h2>
