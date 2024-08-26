@@ -16,19 +16,23 @@ const Navbar = () => {
   const pathName = usePathname();
 
   useEffect(() => {
-    // Make sure the element exists before accessing its properties
+    const hero = document.querySelector("#hero") as HTMLElement | null;
     const navbar = document.querySelector("#NavBar") as HTMLElement | null;
 
-    if (!navbar) return; // If navbar is null, exit early
+    if (!hero || !navbar) return;
 
     const top = navbar.offsetTop;
-    function stickynavbar() {
+    const navbarHeight = navbar.offsetHeight;
+
+    const stickynavbar = () => {
       if (window.scrollY >= top) {
-        navbar?.classList.add("sticky");
+        navbar.classList.add("sticky");
+        hero.style.paddingTop = `${navbarHeight}px`; // Add padding to avoid jump
       } else {
-        navbar?.classList.remove("sticky");
+        navbar.classList.remove("sticky");
+        hero.style.paddingTop = "0px"; // Remove padding when not sticky
       }
-    }
+    };
 
     window.addEventListener("scroll", stickynavbar);
 
@@ -57,7 +61,7 @@ const Navbar = () => {
                   isActive
                     ? "font-bold text-fh-blue-500"
                     : "font-normal text-white"
-                }  hover:text-fh-blue-500 focus-within:text-fh-blue-500`}
+                } hover:text-fh-blue-500 focus-within:text-fh-blue-500`}
               >
                 <Link href={link.path}>{link.name}</Link>
               </li>
