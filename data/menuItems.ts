@@ -33,7 +33,7 @@ export const menuItems = [
       },
       {
         id: 5,
-        name: "Breaded Homemade Fishcake",
+        name: "Breaded Savoury Fishcake",
         price: 2.2,
       },
       {
