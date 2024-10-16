@@ -104,7 +104,7 @@ export const menuItems = [
         id: 15,
         name: "Sausage",
         sizes: [
-          { size: "Large", price: 1.85 },
+          { size: "Large", price: 1.9 },
           { size: "Small", price: 0.95 },
         ],
       },
@@ -387,9 +387,9 @@ export const menuItems = [
       },
       {
         id: 59,
-        name: "Southern Style Goujons",
+        name: "Chicken Strips",
         sizes: [
-          { size: "With Chips", price: 4.0 },
+          { size: "With Chips", price: 4.5 },
           { size: "Without Chips", price: 3.2 },
         ],
       },
@@ -455,7 +455,7 @@ export const menuItems = [
       {
         id: 70,
         name: "Mozzarella Sticks",
-        price: 2.5,
+        price: 3.0,
         info: "With Sweet Chilli Dip",
       },
     ],
@@ -466,7 +466,7 @@ export const menuItems = [
       {
         id: 71,
         name: "Small Fish, Chips & Peas",
-        price: 6.2,
+        price: 5.8,
         info: "Served In A Tray",
       },
     ],
