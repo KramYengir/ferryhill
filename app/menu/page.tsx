@@ -36,7 +36,7 @@ const MenuPage = () => {
           Our Menu
         </h1>
       </div>
-      <div className="max-w-screen-xl mx-auto columns-1 md:columns-2 xl:columns-3 mt-8">
+      <div className="max-w-screen-xl mx-auto columns-1 md:columns-2 xl:columns-3 mt-8 mb-24">
         {menuItems.map((category) => (
           <MenuCategory key={category.name} category={category} />
         ))}

@@ -53,7 +53,7 @@ const AboutSection = ({
           <h2
             id={`section-heading-${heading.replace(/\s+/g, "-").toLowerCase()}`}
             className={
-              `text-left capitalize text-4xl tracking-widest font-bold mb-4 ` +
+              `text-left capitalize text-4xl tracking-widest font-extrabold mb-4 ` +
               headingColor
             }
           >

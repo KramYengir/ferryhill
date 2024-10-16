@@ -20,10 +20,12 @@ const ContactCard: React.FC<ContactCardProps> = ({
 }) => {
   return (
     <div className="grid justify-center items-center min-h-96 px-8 py-12 shadow-sm sm:shadow-lg rounded-md">
-      <h2 className="text-xl font-extrabold uppercase tracking-widest text-fh-blue-600">
+      <h2 className="text-2xl font-extrabold uppercase tracking-widest text-fh-blue-600">
         {title}
       </h2>
-      <p className="max-w-sm leading-relaxed">{description}</p>
+      <p className="max-w-sm px-8 text-balance leading-relaxed">
+        {description}
+      </p>
       <div
         className={`flex ${
           isSocialMedia ? "justify-evenly" : "flex-col items-center"

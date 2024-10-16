@@ -29,7 +29,7 @@ export default function HomePage() {
           <div className="flex flex-row-reverse flex-wrap gap-8 items-center justify-evenly max-w-screen-xl text-left py-20 px-12 mx-auto">
             <OpeningHours />
             <article
-              className="max-w-sm flex flex-col gap-6 justify-center text-center py-16 bg-fh-blue-800 rounded-md p-8"
+              className="max-w-sm flex flex-col gap-6 justify-center text-center py-16 bg-gradient-to-b from-fh-blue-900 to-fh-blue-600 rounded-md p-8"
               aria-labelledby="contact-info-heading"
             >
               <h3 id="contact-info-heading" className="sr-only">

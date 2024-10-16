@@ -24,8 +24,8 @@ const Card: React.FC<CardProps> = ({
     <article className="flex flex-col items-center gap-8 px-6 py-8 rounded-md shadow-lg shadow-fh-blue-950/25">
       <Icon size={48} aria-hidden="true" className="text-fh-gold-500" />
       <h3 className="text-xl font-semibold text-center">{heading}</h3>{" "}
-      <p className="text-center max-w-60">{text}</p>
-      <Link href={link} aria-label={ariaLabel} className="btn-primary">
+      <p className="text-center text-balance max-w-72">{text}</p>
+      <Link href={link} aria-label={ariaLabel} className="btn-primary mt-auto">
         {linkText}
       </Link>
     </article>
