@@ -8,7 +8,7 @@ import faqItems from "@/data/faqItems";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://ferryhill.netlify.app"),
+  metadataBase: new URL("https://ferryhill.com"),
   title: "Get in Touch | Ferryhill Fish & Chips",
   description:
     "Have questions or need to get in touch? Contact Ferryhill Fish & Chips via phone, email, or social media. We're here to help!",
@@ -16,14 +16,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_EN",
-    url: "https://ferryhill.netlify.app/contact",
+    url: "https://ferryhill.com/contact",
     siteName: "Ferryhill Fish & Chips",
     title: "Get in Touch | Ferryhill Fish & Chips",
     description:
       "Have questions or need to get in touch? Contact Ferryhill Fish & Chips via phone, email, or social media. We're here to help!",
     images: [
       {
-        url: "https://ferryhill.netlify.app/og/og_home.png",
+        url: "https://ferryhill.com/og/og_home.png",
         width: 1200,
         height: 630,
         alt: "Contact Ferryhill Fish & Chips",

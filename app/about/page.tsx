@@ -4,7 +4,7 @@ import { aboutInfo } from "../../data/aboutInfo";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://ferryhill.netlify.app"),
+  metadataBase: new URL("https://ferryhill.com"),
   title: "Our Story | Ferryhill Fish & Chips",
   description:
     "Learn about the history and values behind Ferryhill Fish & Chips. Discover why we're renowned for the best Fish & Chips in Manchester!",
@@ -12,14 +12,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_EN",
-    url: "https://ferryhill.netlify.app/about",
+    url: "https://ferryhill.com/about",
     siteName: "Ferryhill Fish & Chips",
     title: "Our Story | Ferryhill Fish & Chips",
     description:
       "Learn about the history and values behind Ferryhill Fish & Chips. Discover why we're renowned for the best Fish & Chips in Manchester!",
     images: [
       {
-        url: "https://ferryhill.netlify.app/og/og_home.png",
+        url: "https://ferryhill.com/og/og_home.png",
         width: 1200,
         height: 630,
         alt: "Ferryhill Fish and Chips interior",

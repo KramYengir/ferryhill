@@ -4,7 +4,7 @@ import MenuCategory from "../../components/MenuCategory";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://ferryhill.netlify.app"),
+  metadataBase: new URL("https://ferryhill.com"),
   title: "Explore Our Menu | Ferryhill Fish & Chips",
   description:
     "Discover our delicious menu at Ferryhill Fish & Chips. From classic fish & chips to tasty specials, find your favorite today!",
@@ -12,14 +12,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_EN",
-    url: "https://ferryhill.netlify.app/menu",
+    url: "https://ferryhill.com/menu",
     siteName: "Ferryhill Fish & Chips",
     title: "Explore Our Menu | Ferryhill Fish & Chips",
     description:
       "Discover our delicious menu at Ferryhill Fish & Chips. From classic fish & chips to tasty specials, find your favorite today!",
     images: [
       {
-        url: "https://ferryhill.netlify.app/og/og_home.png",
+        url: "https://ferryhill.com/og/og_home.png",
         width: 1200,
         height: 630,
         alt: "Ferryhill Fish & Chips menu",
