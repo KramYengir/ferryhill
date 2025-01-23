@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://www.ferryhill.netlify.app
+Host: https://www.ferryhill.com
 
 # Sitemaps
-Sitemap: https://www.ferryhill.netlify.app/sitemap.xml
+Sitemap: https://www.ferryhill.com/sitemap.xml
