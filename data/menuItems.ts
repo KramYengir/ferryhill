@@ -106,6 +106,12 @@ export const menuItems = [
         info: "Or 70p Each",
       },
       {
+        id: 141,
+        name: "Onion Rings",
+        price: 3.0,
+        info: "Or 60p Each",
+      },
+      {
         id: 15,
         name: "Sausage",
         sizes: [
@@ -257,6 +263,11 @@ export const menuItems = [
         price: 3.5,
         info: "4 In A Portion",
       },
+      {
+        id: 381,
+        name: "Barm",
+        price: 0.8,
+      },
     ],
   },
   {
@@ -364,8 +375,8 @@ export const menuItems = [
       {
         id: 54,
         name: "Onion Rings",
-        price: 3.3,
-        info: "Or 70p Each",
+        price: 3.0,
+        info: "Or 60p Each",
       },
       {
         id: 55,
